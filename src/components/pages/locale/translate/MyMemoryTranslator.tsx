@@ -46,11 +46,10 @@ const MyMemoryTranslator = () => {
     return axiosResponse
   }
 
-  const {  isLoading, mutateAsync } =
-    useMutation({
-      mutationFn: getTranslate,
-      mutationKey: ["myMemory"],
-    })
+  const { isLoading, mutateAsync } = useMutation({
+    mutationFn: getTranslate,
+    mutationKey: ["myMemory"],
+  })
   const {
     setValue,
     handleSubmit,
@@ -125,7 +124,10 @@ const MyMemoryTranslator = () => {
 
                     cursor: "default",
                     ":disabled": {
-                      color:theme.colorScheme === "dark" ? theme.colors.dark[0] : theme.colors.dark[8],
+                      color:
+                        theme.colorScheme === "dark"
+                          ? theme.colors.dark[0]
+                          : theme.colors.dark[8],
                       cursor: "default",
                       backgroundColor:
                         theme.colorScheme === "dark"

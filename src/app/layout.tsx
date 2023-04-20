@@ -3,8 +3,8 @@ import "../styles/globals.css"
 import { Inter } from "next/font/google"
 
 import { getSession } from "@/lib/prisma/user"
-import { Providers } from "@/components/providers/"
 import { HeaderMegaMenu } from "@/components/global/navbar/HeaderMegaMenu"
+import { Providers } from "@/components/providers/"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -27,7 +27,7 @@ export default async function RootLayout({
         }
       >
         <Providers>
-          <HeaderMegaMenu session={session}/>
+          <HeaderMegaMenu session={session} />
           {children}
         </Providers>
       </body>
