@@ -28,7 +28,7 @@ export default async function RootLayout({
         }
       >
         <Providers>
-          <HeaderMegaMenu session={session}/>
+          <HeaderMegaMenu session={session} />
           {children}
         </Providers>
       </body>
