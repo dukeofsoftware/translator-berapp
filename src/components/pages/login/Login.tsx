@@ -65,6 +65,7 @@ const Login = () => {
     onSuccess: (data) => {
       if (data.ok) {
         toast.success("Login Successfull")
+        router.refresh()
         router.push("/berapp")
       }
     },

@@ -8,8 +8,7 @@ import {
     UnstyledButton,
     Text,
     SimpleGrid,
-    ThemeIcon,
-    Anchor,
+  
     Divider,
     Center,
     Box,
@@ -129,7 +128,7 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
     const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
     const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
     const { classes, theme } = useStyles();
-
+    
     const links = mockdata.map((item) => (
         <HeaderLink
         icon={item.icon}
