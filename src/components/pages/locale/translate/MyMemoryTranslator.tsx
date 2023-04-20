@@ -46,7 +46,7 @@ const MyMemoryTranslator = () => {
     return axiosResponse
   }
 
-  const { data, error, isError, isLoading, isSuccess, mutateAsync } =
+  const {  isLoading, mutateAsync } =
     useMutation({
       mutationFn: getTranslate,
       mutationKey: ["myMemory"],

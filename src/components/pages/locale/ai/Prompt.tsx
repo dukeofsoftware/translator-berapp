@@ -2,10 +2,11 @@
 
 import { openAILanguageSelectOptions } from "@/constants"
 import { yupResolver } from "@hookform/resolvers/yup"
-import { Button, Select, TextInput } from "@mantine/core"
+import { Button,  TextInput } from "@mantine/core"
+import { Select } from "react-hook-form-mantine"
 import { useMutation } from "@tanstack/react-query"
 import axios from "axios"
-import { Controller, FieldValues, useForm } from "react-hook-form"
+import {  FieldValues, useForm } from "react-hook-form"
 import { BsTranslate } from "react-icons/bs"
 
 import { promptSchema } from "@/lib/validation/promptSchema"
@@ -42,24 +43,16 @@ const Prompt = () => {
             {...register("prompt")}
           />
         </div>
-        <Controller
-          control={control}
-          name="language"
-          render={({
-            field: { onChange, onBlur, value, name, ref },
-            fieldState: { invalid, isTouched, isDirty, error },
-            formState,
-          }) => (
+     
             <Select
+              name="language"
               icon={<BsTranslate />}
-              onChange={(value) => onChange(value)}
-              value={value}
+              control={control}
               placeholder="Language"
               error={errors.language && errors.language.message?.toString()}
               data={openAILanguageSelectOptions}
             />
-          )}
-        />
+        
 
         <Button variant="outline" type="submit" disabled={mutation.isLoading}>
           Gönder

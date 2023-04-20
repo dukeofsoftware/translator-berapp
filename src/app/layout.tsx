@@ -3,7 +3,6 @@ import "../styles/globals.css"
 import { Inter } from "next/font/google"
 
 import { getSession } from "@/lib/prisma/user"
-import Navbar from "@/components/global/navbar/Navbar"
 import { Providers } from "@/components/providers/"
 import { HeaderMegaMenu } from "@/components/global/navbar/HeaderMegaMenu"
 
