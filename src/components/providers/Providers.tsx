@@ -5,7 +5,7 @@ import { ToastContainer } from "react-toastify"
 
 import Mantine from "./Mantine"
 import QueryProvider from "./QueryProvider"
-
+import { Analytics } from "@vercel/analytics/react"
 interface ProvidersProps {
   children: React.ReactNode
 }

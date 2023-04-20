@@ -2,36 +2,37 @@
 
 import Link from "next/link"
 import {
-  Box,
-  Burger,
-  Button,
-  Center,
-  Collapse,
-  Container,
-  Divider,
-  Drawer,
-  Group,
+  createStyles,
   Header,
   HoverCard,
-  ScrollArea,
-  SimpleGrid,
-  Text,
+  Group,
+  Button,
   UnstyledButton,
-  createStyles,
+  Text,
+  SimpleGrid,
+  ThemeIcon,
+  Anchor,
+  Divider,
+  Center,
+  Box,
+  Burger,
+  Drawer,
+  Collapse,
+  ScrollArea,
   rem,
+  Container,
 } from "@mantine/core"
 import { useDisclosure } from "@mantine/hooks"
-import { Session } from "next-auth"
-import { AiFillBook, AiOutlineCheckCircle, AiOutlineDown } from "react-icons/ai"
-import { HiTranslate } from "react-icons/hi"
-import { MdOutlineQuiz } from "react-icons/md"
-import { RiMoneyPoundCircleLine } from "react-icons/ri"
 import { TbBrandOpenai } from "react-icons/tb"
-
-import HeaderLink from "./HeaderLink"
+import Link from "next/link"
 import UserMenu from "./UserMenu"
 import { ThemeToggle } from "./theme-toggle"
-
+import { Session } from "next-auth"
+import { AiOutlineDown, AiFillBook, AiOutlineCheckCircle } from "react-icons/ai"
+import { RiMoneyPoundCircleLine } from "react-icons/ri"
+import { HiTranslate } from "react-icons/hi"
+import { MdOutlineQuiz } from "react-icons/md"
+import HeaderLink from "./HeaderLink"
 const useStyles = createStyles((theme) => ({
   link: {
     display: "flex",
