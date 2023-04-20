@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link"
 import {
   createStyles,
   Header,
@@ -10,8 +9,7 @@ import {
   UnstyledButton,
   Text,
   SimpleGrid,
-  ThemeIcon,
-  Anchor,
+
   Divider,
   Center,
   Box,

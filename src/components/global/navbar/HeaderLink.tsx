@@ -10,16 +10,7 @@ import {
 import React from "react"
 import { IconType } from "react-icons"
 
-import React from "react"
-import {
-  Group,
-  Text,
-  ThemeIcon,
-  UnstyledButton,
-  createStyles,
-  rem,
-} from "@mantine/core"
-import { IconType } from "react-icons"
+
 
 const useStyles = createStyles((theme) => ({
   link: {
