@@ -35,7 +35,7 @@ export async function POST(request: Request) {
     url: "https://text-translator2.p.rapidapi.com/translate",
     headers: {
       "content-type": "application/x-www-form-urlencoded",
-      "X-RapidAPI-Key":process.env.RAPID_API_KEY,
+      "X-RapidAPI-Key": process.env.RAPID_API_KEY,
       "X-RapidAPI-Host": "text-translator2.p.rapidapi.com",
     },
     data: encodedParams,

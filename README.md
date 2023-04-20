@@ -1,4 +1,3 @@
-
 #### Başlarken
 
 ```
@@ -20,4 +19,5 @@ pnpx vercel login
 ```
 pnpx vercel link
 ```
+
 # translator
