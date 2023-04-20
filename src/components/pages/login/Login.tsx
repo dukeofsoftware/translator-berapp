@@ -118,7 +118,7 @@ const Login = () => {
           <Text fz="sm" ta={"center"}>
             Don&apos;t have an Account?{" "}
             <Link
-              href={"/register"}
+              href={"/auth/register"}
               className="font-bold text-sky-500 hover:underline "
             >
               Register
