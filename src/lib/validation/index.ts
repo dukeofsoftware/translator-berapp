@@ -5,7 +5,6 @@ import {
 } from "@/lib/validation/userSchema"
 import { dictionarySchema } from "./dictionarySchema"
 import { myMemorySchema } from "./myMemorySchema"
-import { dictionarySchema } from "./dictionarySchema"
 
 export {
   myMemorySchema,
