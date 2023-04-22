@@ -1,5 +1,5 @@
-import AIPage from "./locale/ai/AIPage"
+import AITranslate from "./locale/ai/AITranslate"
 import Login from "./login/Login"
 import Signup from "./register/Signup"
 
-export { Login, Signup, AIPage }
+export { Login, Signup, AITranslate }

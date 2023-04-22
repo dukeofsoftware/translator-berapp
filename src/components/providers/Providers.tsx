@@ -5,6 +5,7 @@ import { ToastContainer } from "react-toastify"
 
 import Mantine from "./Mantine"
 import QueryProvider from "./QueryProvider"
+
 interface ProvidersProps {
   children: React.ReactNode
 }

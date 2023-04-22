@@ -1,3 +1,0 @@
-interface IState {
-  count: number
-}

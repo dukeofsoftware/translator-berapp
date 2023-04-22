@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 
 import { getSession } from "@/lib/prisma/user"
 import { HeaderMegaMenu } from "@/components/global/navbar/HeaderMegaMenu"
+import Navbar from "@/components/global/navbar/Navbar"
 import { Providers } from "@/components/providers/"
 
 const inter = Inter({ subsets: ["latin"] })

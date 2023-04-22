@@ -1,35 +1,39 @@
 "use client"
 
+import dynamic from "next/dynamic"
+import Link from "next/link"
 import {
-  createStyles,
-  Header,
-  HoverCard,
-  Group,
-  Button,
-  UnstyledButton,
-  Text,
-  SimpleGrid,
-  Divider,
-  Center,
   Box,
   Burger,
-  Drawer,
+  Button,
+  Center,
+  CloseButton,
   Collapse,
-  ScrollArea,
-  rem,
   Container,
+  Divider,
+  Drawer,
+  Group,
+  Header,
+  HoverCard,
+  ScrollArea,
+  SimpleGrid,
+  Text,
+  UnstyledButton,
+  createStyles,
+  rem,
 } from "@mantine/core"
 import { useDisclosure } from "@mantine/hooks"
-import { TbBrandOpenai } from "react-icons/tb"
-import Link from "next/link"
-import UserMenu from "./UserMenu"
-import { ThemeToggle } from "./theme-toggle"
 import { Session } from "next-auth"
-import { AiOutlineDown, AiFillBook, AiOutlineCheckCircle } from "react-icons/ai"
-import { RiMoneyPoundCircleLine } from "react-icons/ri"
+import { AiFillBook, AiOutlineCheckCircle, AiOutlineDown } from "react-icons/ai"
 import { HiTranslate } from "react-icons/hi"
 import { MdOutlineQuiz } from "react-icons/md"
+import { TbBrandOpenai } from "react-icons/tb"
+
 import HeaderLink from "./HeaderLink"
+import { ThemeToggle } from "./theme-toggle"
+
+const UserMenu = dynamic(() => import("./UserMenu"))
+
 const useStyles = createStyles((theme) => ({
   link: {
     display: "flex",
@@ -106,27 +110,41 @@ const mockdata = [
     icon: AiOutlineCheckCircle,
     title: "Grammar Check",
     description: "Check your grammar and spelling",
+    hrefSession: "/berapp/grammar",
+    href: "/features/grammar",
+
   },
   {
     icon: TbBrandOpenai,
     title: "AI Tools",
     description:
       "Artifical Intelligence grammar checker, translation, and more",
+    hrefSession: "/berapp/ai",
+    href: "/features/ai",
+
   },
   {
     icon: AiFillBook,
     title: "Dictionary",
     description: "Search for words and definitions",
+    hrefSession: "/berapp/dictionary",
+
   },
   {
     icon: MdOutlineQuiz,
     title: "Quiz ",
     description: "Test your knowledge with our quizzes",
+    hrefSession: "/berapp/quiz",
+    href: "/features/quiz",
+
   },
   {
     icon: HiTranslate,
     title: "Translate",
     description: "Translate text into languages",
+    hrefSession: "/berapp/translate",
+    href: "/features/translate",
+
   },
   {
     icon: RiMoneyPoundCircleLine,
@@ -143,6 +161,16 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
 
   const links = mockdata.map((item) => (
     <HeaderLink
+      href={session ? item.hrefSession : item.href}
+      icon={item.icon}
+      title={item.title}
+      description={item.description}
+    />
+  ))
+
+
+  const links = mockdata.map((item) => (
+    <HeaderLink
       icon={item.icon}
       title={item.title}
       description={item.description}
@@ -155,7 +183,8 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
         <Header height={70} px="md">
           <Group position="apart" sx={{ height: "100%" }}>
             <div className="text-lg font-extrabold dark:text-neutral-100 text-neutral-800">
-              Translator
+              <Link href={"/"}>Translator</Link>
+
             </div>
             <Group
               sx={{ height: "100%" }}
@@ -173,7 +202,8 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
                 withinPortal
               >
                 <HoverCard.Target>
-                  <Link href="/berapp/features" className={classes.link}>
+                  <Link href="/features" className={classes.link}>
+
                     <Center inline>
                       <Box component="span" mr={5}>
                         Features
@@ -188,7 +218,11 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
                 <HoverCard.Dropdown sx={{ overflow: "hidden" }}>
                   <Group position="apart" px="md">
                     <Text fw={500}>Features</Text>
-                    <Link href="/berapp/features" className="font-light">
+                    <Link
+                      href="/features"
+                      className="font-light text-sm text-sky-500 hover:underline underline-offset-1 "
+                    >
+
                       View all
                     </Link>
                   </Group>
@@ -246,6 +280,10 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
           </Group>
         </Header>
         <Drawer
+          closeButtonProps={{
+            children: <CloseButton aria-label="Close modal" />,
+          }}
+
           opened={drawerOpened}
           onClose={closeDrawer}
           size="100%"
@@ -280,11 +318,14 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
               color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
             />
             <Group position="center" grow pb="xl" px="md">
-              <Link href={"/auth/login"}>
-                <Button variant="default">Log in</Button>
+              <Link className="w-full" href={"/auth/login"}>
+                <Button variant="default" className="w-full">
+                  Log in
+                </Button>
               </Link>
-              <Link href={"/auth/register"}>
-                <Button>Sign up</Button>
+              <Link className="w-full" href={"/auth/register"}>
+                <Button className="w-full">Sign up</Button>
+
               </Link>
             </Group>
           </ScrollArea>

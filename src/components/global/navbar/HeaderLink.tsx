@@ -1,13 +1,15 @@
 "use client"
+
+import React from "react"
+import Link from "next/link"
 import {
   Group,
+  Text,
   ThemeIcon,
   UnstyledButton,
   createStyles,
   rem,
-  Text,
 } from "@mantine/core"
-import React from "react"
 import { IconType } from "react-icons"
 
 const useStyles = createStyles((theme) => ({
@@ -82,30 +84,35 @@ interface HeaderLinkProps {
   title: string
   description: string
   icon: IconType
+  href: string
+
 }
 const HeaderLink: React.FC<HeaderLinkProps> = ({
   title,
   description,
   icon: Icon,
+  href,
 }) => {
   const { classes, theme } = useStyles()
 
   return (
-    <UnstyledButton className={classes.subLink} key={title}>
-      <Group noWrap align="flex-start">
-        <ThemeIcon size={34} variant="default" radius="md">
-          <Icon size={22} color={theme.fn.primaryColor()} />
-        </ThemeIcon>
-        <div>
-          <Text size="sm" fw={500}>
-            {title}
-          </Text>
-          <Text size="xs" color="dimmed">
-            {description}
-          </Text>
-        </div>
-      </Group>
-    </UnstyledButton>
+    <Link href={href} className="w-full">
+      <UnstyledButton className={classes.subLink} key={title}>
+        <Group noWrap align="flex-start">
+          <ThemeIcon size={34} variant="default" radius="md">
+            <Icon size={22} color={theme.fn.primaryColor()} />
+          </ThemeIcon>
+          <div>
+            <Text size="sm" fw={500}>
+              {title}
+            </Text>
+            <Text size="xs" color="dimmed">
+              {description}
+            </Text>
+          </div>
+        </Group>
+      </UnstyledButton>
+    </Link>
   )
 }
 

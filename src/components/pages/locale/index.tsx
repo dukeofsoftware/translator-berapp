@@ -1,4 +1,5 @@
-import Dictionary from "./word/Dictionary"
+import AITranslate from "./ai/AITranslate"
 import MyMemoryTranslator from "./translate/MyMemoryTranslator"
-import AIPage from "./ai/AIPage"
-export { Dictionary, MyMemoryTranslator, AIPage }
+import Dictionary from "./word/Dictionary"
+
+export { Dictionary, MyMemoryTranslator, AITranslate }
