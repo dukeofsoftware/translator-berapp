@@ -5,7 +5,7 @@ import { Box, PasswordInput, Popover, Progress, TextInput } from "@mantine/core"
 import { FieldValues, UseFormRegister } from "react-hook-form"
 import { IconType } from "react-icons"
 
-import { Requirement, RequirementType } from "@/components/ui"
+import { RequirementType } from "@/components/ui"
 
 interface InputWithRequirementsProps {
   id: string

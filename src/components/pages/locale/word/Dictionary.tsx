@@ -1,6 +1,7 @@
 "use client"
 
 import dynamic from "next/dynamic"
+
 import { yupResolver } from "@hookform/resolvers/yup"
 import { Button, Container, Paper, TextInput, Tooltip } from "@mantine/core"
 import { useMutation } from "@tanstack/react-query"
@@ -82,6 +83,7 @@ const Dictionary = () => {
         </form>
       </Paper>
       {dictionary && <DictionaryResponse dictionary={dictionary} />}
+
     </Container>
   )
 }

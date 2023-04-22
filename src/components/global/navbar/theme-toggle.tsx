@@ -6,7 +6,6 @@ import { BsMoonStars, BsSun } from "react-icons/bs"
 
 export function ThemeToggle() {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme()
-  const dark = colorScheme === "dark"
 
   return (
     <Group position="center" my="xl">

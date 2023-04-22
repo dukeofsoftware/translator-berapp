@@ -65,6 +65,7 @@ const Login = () => {
     onSuccess: (data) => {
       if (data.ok) {
         toast.success("Login Successfull")
+        router.refresh()
         router.push("/berapp")
       }
     },
@@ -117,7 +118,7 @@ const Login = () => {
           <Text fz="sm" ta={"center"}>
             Don&apos;t have an Account?{" "}
             <Link
-              href={"/register"}
+              href={"/auth/register"}
               className="font-bold text-sky-500 hover:underline "
             >
               Register

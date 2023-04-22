@@ -112,6 +112,7 @@ const mockdata = [
     description: "Check your grammar and spelling",
     hrefSession: "/berapp/grammar",
     href: "/features/grammar",
+
   },
   {
     icon: TbBrandOpenai,
@@ -120,13 +121,14 @@ const mockdata = [
       "Artifical Intelligence grammar checker, translation, and more",
     hrefSession: "/berapp/ai",
     href: "/features/ai",
+
   },
   {
     icon: AiFillBook,
     title: "Dictionary",
     description: "Search for words and definitions",
     hrefSession: "/berapp/dictionary",
-    href: "/features/dictionary",
+
   },
   {
     icon: MdOutlineQuiz,
@@ -134,6 +136,7 @@ const mockdata = [
     description: "Test your knowledge with our quizzes",
     hrefSession: "/berapp/quiz",
     href: "/features/quiz",
+
   },
   {
     icon: HiTranslate,
@@ -141,6 +144,13 @@ const mockdata = [
     description: "Translate text into languages",
     hrefSession: "/berapp/translate",
     href: "/features/translate",
+
+  },
+  {
+    icon: RiMoneyPoundCircleLine,
+    title: "Free for everyone",
+    description:
+      "Free for everyone to use and learn from our tools and resources",
   },
 ]
 export function HeaderMegaMenu({ session }: { session: Session | null }) {
@@ -158,6 +168,15 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
     />
   ))
 
+
+  const links = mockdata.map((item) => (
+    <HeaderLink
+      icon={item.icon}
+      title={item.title}
+      description={item.description}
+    />
+  ))
+
   return (
     <Container>
       <Box pb={120}>
@@ -165,6 +184,7 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
           <Group position="apart" sx={{ height: "100%" }}>
             <div className="text-lg font-extrabold dark:text-neutral-100 text-neutral-800">
               <Link href={"/"}>Translator</Link>
+
             </div>
             <Group
               sx={{ height: "100%" }}
@@ -183,6 +203,7 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
               >
                 <HoverCard.Target>
                   <Link href="/features" className={classes.link}>
+
                     <Center inline>
                       <Box component="span" mr={5}>
                         Features
@@ -201,6 +222,7 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
                       href="/features"
                       className="font-light text-sm text-sky-500 hover:underline underline-offset-1 "
                     >
+
                       View all
                     </Link>
                   </Group>
@@ -261,6 +283,7 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
           closeButtonProps={{
             children: <CloseButton aria-label="Close modal" />,
           }}
+
           opened={drawerOpened}
           onClose={closeDrawer}
           size="100%"
@@ -302,6 +325,7 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
               </Link>
               <Link className="w-full" href={"/auth/register"}>
                 <Button className="w-full">Sign up</Button>
+
               </Link>
             </Group>
           </ScrollArea>

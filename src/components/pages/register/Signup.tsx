@@ -46,7 +46,7 @@ const Signup = () => {
     }
     setIsLoading(true)
 
-    const response = await toast.promise(
+    await toast.promise(
       axios
         .post("/api/user", {
           username: data.username,

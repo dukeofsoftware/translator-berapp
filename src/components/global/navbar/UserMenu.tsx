@@ -1,6 +1,7 @@
 "use client"
 
 import { Avatar, Button, Menu, Text } from "@mantine/core"
+
 import { Session } from "next-auth"
 import { signOut } from "next-auth/react"
 import { AiFillHeart, AiOutlineLogin } from "react-icons/ai"
