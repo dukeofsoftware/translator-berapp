@@ -22,8 +22,8 @@ export default async function RootLayout({
         className={
           `${
             process.env.DEVELOPMENT === "true" && "debug-screens"
-          } min-h-screen w-full 
-      
+          } min-h-screen w-full
+
           ` + inter.className
         }
       >
