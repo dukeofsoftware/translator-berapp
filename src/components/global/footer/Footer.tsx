@@ -1,3 +1,4 @@
+"use client"
 import { createStyles, Text, Container, ActionIcon, Group, rem } from '@mantine/core';
 import Link from 'next/link';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
