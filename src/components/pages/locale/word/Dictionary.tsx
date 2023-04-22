@@ -63,11 +63,14 @@ const Dictionary = () => {
                 position="top-end"
                 withArrow
               >
-                <GrAlert
-                  size="1rem"
-                  style={{ display: "block", opacity: 0.75 }}
-                  className="text-red-500"
-                />
+                <div>
+                  <GrAlert
+                    size="1rem"
+                    style={{ display: "block", opacity: 0.75 }}
+                    className="text-red-500"
+                  />
+                </div>
+
               </Tooltip>
             }
           />

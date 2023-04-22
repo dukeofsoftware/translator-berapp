@@ -24,14 +24,11 @@ import {
 } from "@mantine/core"
 import { useDisclosure } from "@mantine/hooks"
 import { Session } from "next-auth"
-import { AiFillBook, AiOutlineCheckCircle, AiOutlineDown } from "react-icons/ai"
-import { HiTranslate } from "react-icons/hi"
-import { MdOutlineQuiz } from "react-icons/md"
-import { TbBrandOpenai } from "react-icons/tb"
-import { RiMoneyPoundCircleLine } from "react-icons/ri"
+
 import HeaderLink from "./HeaderLink"
 import { ThemeToggle } from "./theme-toggle"
-
+import { features } from "@/constants"
+import { AiOutlineDown } from "react-icons/ai"
 const UserMenu = dynamic(() => import("./UserMenu"))
 
 const useStyles = createStyles((theme) => ({
@@ -105,63 +102,14 @@ const useStyles = createStyles((theme) => ({
     },
   },
 }))
-const mockdata = [
-  {
-    icon: AiOutlineCheckCircle,
-    title: "Grammar Check",
-    description: "Check your grammar and spelling",
-    hrefSession: "/berapp/grammar",
-    href: "/features/grammar",
 
-  },
-  {
-    icon: TbBrandOpenai,
-    title: "AI Tools",
-    description:
-      "Artifical Intelligence grammar checker, translation, and more",
-    hrefSession: "/berapp/ai",
-    href: "/features/ai",
-
-  },
-  {
-    icon: AiFillBook,
-    title: "Dictionary",
-    description: "Search for words and definitions",
-    hrefSession: "/berapp/dictionary",
-
-  },
-  {
-    icon: MdOutlineQuiz,
-    title: "Quiz ",
-    description: "Test your knowledge with our quizzes",
-    hrefSession: "/berapp/quiz",
-    href: "/features/quiz",
-
-  },
-  {
-    icon: HiTranslate,
-    title: "Translate",
-    description: "Translate text into languages",
-    hrefSession: "/berapp/translate",
-    href: "/features/translate",
-
-  },
-  {
-    icon: RiMoneyPoundCircleLine,
-    title: "Free for everyone",
-    description:
-      "Free for everyone to use and learn from our tools and resources",
-    hrefSession: "/berapp/translate",
-    href: "/features/translate",
-  },
-]
 export function HeaderMegaMenu({ session }: { session: Session | null }) {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false)
   const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false)
   const { classes, theme } = useStyles()
 
-  const links = mockdata.map((item) => (
+  const links = features.map((item) => (
     <HeaderLink
       href={session ? item.hrefSession as string : item.href as string}
       icon={item.icon}

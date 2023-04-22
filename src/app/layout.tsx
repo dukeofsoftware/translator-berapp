@@ -4,9 +4,8 @@ import { Inter } from "next/font/google"
 
 import { getSession } from "@/lib/prisma/user"
 import { HeaderMegaMenu } from "@/components/global/navbar/HeaderMegaMenu"
-import Navbar from "@/components/global/navbar/Navbar"
 import { Providers } from "@/components/providers/"
-
+import {Footer} from "@/components/global/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {}
@@ -30,6 +29,7 @@ export default async function RootLayout({
         <Providers>
           <HeaderMegaMenu session={session} />
           {children}
+          <Footer/>
         </Providers>
       </body>
     </html>
