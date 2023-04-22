@@ -28,7 +28,7 @@ import { AiFillBook, AiOutlineCheckCircle, AiOutlineDown } from "react-icons/ai"
 import { HiTranslate } from "react-icons/hi"
 import { MdOutlineQuiz } from "react-icons/md"
 import { TbBrandOpenai } from "react-icons/tb"
-
+import { RiMoneyPoundCircleLine } from "react-icons/ri"
 import HeaderLink from "./HeaderLink"
 import { ThemeToggle } from "./theme-toggle"
 
@@ -151,6 +151,8 @@ const mockdata = [
     title: "Free for everyone",
     description:
       "Free for everyone to use and learn from our tools and resources",
+    hrefSession: "/berapp/translate",
+    href: "/features/translate",
   },
 ]
 export function HeaderMegaMenu({ session }: { session: Session | null }) {
@@ -161,21 +163,13 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
 
   const links = mockdata.map((item) => (
     <HeaderLink
-      href={session ? item.hrefSession : item.href}
+      href={session ? item.hrefSession as string : item.href as string}
       icon={item.icon}
       title={item.title}
       description={item.description}
     />
   ))
 
-
-  const links = mockdata.map((item) => (
-    <HeaderLink
-      icon={item.icon}
-      title={item.title}
-      description={item.description}
-    />
-  ))
 
   return (
     <Container>
