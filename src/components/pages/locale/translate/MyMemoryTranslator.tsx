@@ -125,7 +125,10 @@ const MyMemoryTranslator = () => {
 
                     cursor: "default",
                     ":disabled": {
-                      color:theme.colorScheme === "dark" ? theme.colors.dark[0] : theme.colors.dark[8],
+                      color:
+                        theme.colorScheme === "dark"
+                          ? theme.colors.dark[0]
+                          : theme.colors.dark[8],
                       cursor: "default",
                       backgroundColor:
                         theme.colorScheme === "dark"

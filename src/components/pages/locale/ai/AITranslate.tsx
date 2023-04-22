@@ -1,6 +1,6 @@
 import Prompt from "./Prompt"
 
-const AIPage = () => {
+const AITranslate = () => {
   return (
     <div className="">
       <Prompt />
@@ -8,4 +8,4 @@ const AIPage = () => {
   )
 }
 
-export default AIPage
+export default AITranslate
