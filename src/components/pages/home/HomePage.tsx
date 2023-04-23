@@ -10,9 +10,10 @@ const AskedQuestions = dynamic(() => import("./AskedQuestions"))
 const HomePage = () => {
   return (
     <div>
-      <AskedQuestions />
       <HeroSection />
       <FeaturesSection />
+      <AskedQuestions />
+
     </div>
   )
 }

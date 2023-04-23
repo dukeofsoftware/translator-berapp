@@ -63,7 +63,7 @@ export default function AskedQuestions() {
       </Title>
       <Accordion variant="separated">
         {askedQuestions.map((question) => (
-          <Accordion.Item className={classes.item} value="reset-password">
+          <Accordion.Item className={classes.item} value={question.title}>
             <Accordion.Control>{question.title}</Accordion.Control>
             <Accordion.Panel>{question.description}</Accordion.Panel>
           </Accordion.Item>
