@@ -1,0 +1,215 @@
+{
+  "level": "A2",
+  "quizA2": [
+    {
+      "question": "I like to ___ my bike on weekends.",
+      "answers": [
+        {
+          "answer": "ride",
+          "correct": true
+        },
+        {
+          "answer": "driving",
+          "correct": false
+        },
+        {
+          "answer": "rides",
+          "correct": false
+        },
+        {
+          "answer": "drove",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I ___ to school by bus every day.",
+      "answers": [
+        {
+          "answer": "go",
+          "correct": true
+        },
+        {
+          "answer": "going",
+          "correct": false
+        },
+        {
+          "answer": "goes",
+          "correct": false
+        },
+        {
+          "answer": "went",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "She ___ her hair every morning.",
+      "answers": [
+        {
+          "answer": "combs",
+          "correct": true
+        },
+        {
+          "answer": "combing",
+          "correct": false
+        },
+        {
+          "answer": "comb",
+          "correct": false
+        },
+        {
+          "answer": "combed",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I ___ a book about history.",
+      "answers": [
+        {
+          "answer": "am reading",
+          "correct": true
+        },
+        {
+          "answer": "read",
+          "correct": false
+        },
+        {
+          "answer": "reads",
+          "correct": false
+        },
+        {
+          "answer": "reading",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "My brother ___ a sandwich for lunch every day.",
+      "answers": [
+        {
+          "answer": "eats",
+          "correct": true
+        },
+        {
+          "answer": "ate",
+          "correct": false
+        },
+        {
+          "answer": "eaten",
+          "correct": false
+        },
+        {
+          "answer": "eating",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "She ___ in the library every day.",
+      "answers": [
+        {
+          "answer": "studies",
+          "correct": true
+        },
+        {
+          "answer": "study",
+          "correct": false
+        },
+        {
+          "answer": "studied",
+          "correct": false
+        },
+        {
+          "answer": "studying",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I ___ up early every day.",
+      "answers": [
+        {
+          "answer": "wake",
+          "correct": true
+        },
+        {
+          "answer": "wakes",
+          "correct": false
+        },
+        {
+          "answer": "woke",
+          "correct": false
+        },
+        {
+          "answer": "waking",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "My mom ___ a cake for my birthday.",
+      "answers": [
+        {
+          "answer": "baked",
+          "correct": true
+        },
+        {
+          "answer": "bake",
+          "correct": false
+        },
+        {
+          "answer": "bakes",
+          "correct": false
+        },
+        {
+          "answer": "baking",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "He ___ tennis with his friends on weekends.",
+      "answers": [
+        {
+          "answer": "plays",
+          "correct": true
+        },
+        {
+          "answer": "played",
+          "correct": false
+        },
+        {
+          "answer": "play",
+          "correct": false
+        },
+        {
+          "answer": "playing",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I ___ a cup of coffee every morning.",
+      "answers": [
+        {
+          "answer": "drink",
+          "correct": true
+        },
+        {
+          "answer": "drinks",
+          "correct": false
+        },
+        {
+          "answer": "drank",
+          "correct": false
+        },
+        {
+          "answer": "drinking",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

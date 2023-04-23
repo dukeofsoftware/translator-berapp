@@ -1,7 +1,7 @@
 import { getServerSession } from "next-auth/next"
 
 import { authOptions } from "@/lib/auth"
-import { hashPass } from "../crpyt"
+import { hashPass, isSamePass } from "../crpyt"
 import { db } from "./db"
 
 export const createUser = async (
@@ -35,6 +35,42 @@ export const createUser = async (
       throw new Error("Kullanıcı yok...")
     }
     return { user }
+  } catch (error) {
+    return error
+  }
+}
+
+export const deleteUser = async (id: string, password: string) => {
+  if (!id) {
+    throw new Error("id yok...")
+  }
+  if (!password) {
+    throw new Error("Şifre yok...")
+  }
+
+  try {
+    const user = await db.user.findUnique({
+      where: {
+        id,
+      },
+    })
+
+    if (user) {
+      const isSame = await isSamePass(password, user.password as string)
+      if (!isSame) {
+        throw new Error("Şifre yanlış...")
+      }
+      const deletedUser = await db.user.delete({
+        where: {
+          id,
+        },
+      })
+      if (!deletedUser) {
+        throw new Error("Something went wrong...")
+      }
+      return { deletedUser }
+    }
+    throw new Error("Kullanıcı silinemedi...")
   } catch (error) {
     return error
   }

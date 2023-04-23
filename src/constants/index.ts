@@ -1,5 +1,5 @@
+import { features } from "./features"
 import { myMemoryLanguageOptions } from "./myMemory"
 import { openAILanguageSelectOptions } from "./openai"
-import { features } from './features';
 
-export { openAILanguageSelectOptions, myMemoryLanguageOptions,features }
+export { openAILanguageSelectOptions, myMemoryLanguageOptions, features }

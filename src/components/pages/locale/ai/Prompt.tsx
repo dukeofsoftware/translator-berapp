@@ -9,7 +9,6 @@ import {
   Textarea,
   useMantineTheme,
 } from "@mantine/core"
-
 import { useMutation } from "@tanstack/react-query"
 import axios from "axios"
 import { FieldValues, useForm } from "react-hook-form"
@@ -65,7 +64,6 @@ const Prompt = () => {
         <Select
           icon={<BsTranslate />}
           name="language"
-
           control={control}
           placeholder="Language"
           error={errors.language && errors.language.message?.toString()}

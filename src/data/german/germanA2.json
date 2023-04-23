@@ -1,0 +1,404 @@
+{
+  "level": "A2",
+  "quiz": [
+    {
+      "question": "Ich ___ um 8 Uhr aufstehen. (muss)",
+      "answers": [
+        {
+          "answer": "muss",
+          "correct": true
+        },
+        {
+          "answer": "kann",
+          "correct": false
+        },
+        {
+          "answer": "darf",
+          "correct": false
+        },
+        {
+          "answer": "will",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Meine Freundin ___ in einem Café. (arbeitet)",
+      "answers": [
+        {
+          "answer": "arbeitet",
+          "correct": true
+        },
+        {
+          "answer": "fährt",
+          "correct": false
+        },
+        {
+          "answer": "kocht",
+          "correct": false
+        },
+        {
+          "answer": "lernt",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ich ___ heute Abend fernsehen. (möchte)",
+      "answers": [
+        {
+          "answer": "möchte",
+          "correct": true
+        },
+        {
+          "answer": "will",
+          "correct": false
+        },
+        {
+          "answer": "kann",
+          "correct": false
+        },
+        {
+          "answer": "habe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Wir ___ in einem Hotel übernachten. (werden)",
+      "answers": [
+        {
+          "answer": "werden",
+          "correct": true
+        },
+        {
+          "answer": "sind",
+          "correct": false
+        },
+        {
+          "answer": "haben",
+          "correct": false
+        },
+        {
+          "answer": "können",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Meine Schwester ___ eine neue Wohnung suchen. (muss)",
+      "answers": [
+        {
+          "answer": "muss",
+          "correct": true
+        },
+        {
+          "answer": "kann",
+          "correct": false
+        },
+        {
+          "answer": "darf",
+          "correct": false
+        },
+        {
+          "answer": "will",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ich ___ eine Tasse Kaffee trinken. (möchte)",
+      "answers": [
+        {
+          "answer": "möchte",
+          "correct": true
+        },
+        {
+          "answer": "will",
+          "correct": false
+        },
+        {
+          "answer": "kann",
+          "correct": false
+        },
+        {
+          "answer": "habe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Mein Bruder ___ sehr gerne Musik hören. (mag)",
+      "answers": [
+        {
+          "answer": "mag",
+          "correct": true
+        },
+        {
+          "answer": "kann",
+          "correct": false
+        },
+        {
+          "answer": "will",
+          "correct": false
+        },
+        {
+          "answer": "muss",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ich ___ eine Jacke kaufen. (möchte)",
+      "answers": [
+        {
+          "answer": "möchte",
+          "correct": true
+        },
+        {
+          "answer": "will",
+          "correct": false
+        },
+        {
+          "answer": "kann",
+          "correct": false
+        },
+        {
+          "answer": "habe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ich ___ meine Hausaufgaben machen. (muss)",
+      "answers": [
+        {
+          "answer": "muss",
+          "correct": true
+        },
+        {
+          "answer": "kann",
+          "correct": false
+        },
+        {
+          "answer": "darf",
+          "correct": false
+        },
+        {
+          "answer": "will",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Der Zug ___ um 10 Uhr abfahren. (soll)",
+      "answers": [
+        {
+          "answer": "soll",
+          "correct": true
+        },
+        {
+          "answer": "ist",
+          "correct": false
+        },
+        {
+          "answer": "hat",
+          "correct": false
+        },
+        {
+          "answer": "muss",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ich kann leider nicht kommen, weil ich . (krank)",
+      "answers": [
+        {
+          "answer": "krank bin",
+          "correct": true
+        },
+        {
+          "answer": "keine Lust habe",
+          "correct": false
+        },
+        {
+          "answer": "weggehen will",
+          "correct": false
+        },
+        {
+          "answer": "einkaufen muss",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ich möchte ___ Tee trinken. (einen)",
+      "answers": [
+        {
+          "answer": "einen",
+          "correct": true
+        },
+        {
+          "answer": "eine",
+          "correct": false
+        },
+        {
+          "answer": "ein",
+          "correct": false
+        },
+        {
+          "answer": "keinen",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Meine Schwester ___ Klavier spielen. (lernt)",
+      "answers": [
+        {
+          "answer": "lernt",
+          "correct": true
+        },
+        {
+          "answer": "spielt",
+          "correct": false
+        },
+        {
+          "answer": "übt",
+          "correct": false
+        },
+        {
+          "answer": "mag",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": " du morgen Zeit? (Hast)",
+      "answers": [
+        {
+          "answer": "Hast",
+          "correct": true
+        },
+        {
+          "answer": "Bist",
+          "correct": false
+        },
+        {
+          "answer": "Machst",
+          "correct": false
+        },
+        {
+          "answer": "Gehst",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ich gehe oft ins Kino, ___ ich Filme mag. (weil)",
+      "answers": [
+        {
+          "answer": "weil",
+          "correct": true
+        },
+        {
+          "answer": "obwohl",
+          "correct": false
+        },
+        {
+          "answer": "wenn",
+          "correct": false
+        },
+        {
+          "answer": "dass",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Meine Eltern sind ___ Jahre verheiratet. (seit)",
+      "answers": [
+        {
+          "answer": "seit",
+          "correct": true
+        },
+        {
+          "answer": "für",
+          "correct": false
+        },
+        {
+          "answer": "nach",
+          "correct": false
+        },
+        {
+          "answer": "vor",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "___ du schon einmal in Berlin? (Warst)",
+      "answers": [
+        {
+          "answer": "Warst",
+          "correct": true
+        },
+        {
+          "answer": "Hast",
+          "correct": false
+        },
+        {
+          "answer": "Bist",
+          "correct": false
+        },
+        {
+          "answer": "Gehst",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Mein Bruder ist ___ als ich. (größer)",
+      "answers": [
+        {
+          "answer": "größer",
+          "correct": true
+        },
+        {
+          "answer": "kleiner",
+          "correct": false
+        },
+        {
+          "answer": "jünger",
+          "correct": false
+        },
+        {
+          "answer": "älter",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ich bin ___ zu spät gekommen. (leider)",
+      "answers": [
+        {
+          "answer": "leider",
+          "correct": true
+        },
+        {
+          "answer": "früh",
+          "correct": false
+        },
+        {
+          "answer": "pünktlich",
+          "correct": false
+        },
+        {
+          "answer": "gerade",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

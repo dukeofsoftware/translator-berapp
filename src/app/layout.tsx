@@ -3,12 +3,38 @@ import "../styles/globals.css"
 import { Inter } from "next/font/google"
 
 import { getSession } from "@/lib/prisma/user"
+import { Footer } from "@/components/global/footer"
 import { HeaderMegaMenu } from "@/components/global/navbar/HeaderMegaMenu"
 import { Providers } from "@/components/providers/"
-import {Footer} from "@/components/global/footer"
+
 const inter = Inter({ subsets: ["latin"] })
 
-export const metadata = {}
+export const metadata = {
+  title: {
+    default: "AI Translation Assistant",
+    template: "%s | AI Translation Assistant",
+  },
+  description:
+    "AI Translation Assistant is an application that enables users to easily translate and learn languages. With its AI-powered translation engine, it provides users with quick and accurate translations. Additionally, it automatically detects and corrects grammar errors.",
+  keywords: [
+    "Translator",
+    "AI Translation Assistant",
+    " AI Translation",
+    "Translation",
+    "AI",
+    "English",
+    "Spanish",
+    "German",
+    "French",
+    "Italian",
+    "Russian",
+    "Turkish",
+    "Chinese",
+    "Japanese",
+    "Korean",
+    "education",
+  ],
+}
 export default async function RootLayout({
   children,
 }: {
@@ -29,7 +55,7 @@ export default async function RootLayout({
         <Providers>
           <HeaderMegaMenu session={session} />
           {children}
-          <Footer/>
+          <Footer />
         </Providers>
       </body>
     </html>

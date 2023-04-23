@@ -1,5 +1,7 @@
-import { HomePage } from "@/components/pages";
+import { HomePage } from "@/components/pages"
+
+export const metadata = {}
 
 export default function Home() {
-  return <HomePage/>
+  return <HomePage />
 }

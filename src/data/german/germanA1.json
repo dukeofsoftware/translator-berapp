@@ -1,0 +1,404 @@
+{
+  "level": "A1",
+  "quiz": [
+    {
+      "question": "Ich ___ eine Pizza bestellen. (möchte)",
+      "answers": [
+        {
+          "answer": "möchte",
+          "correct": true
+        },
+        {
+          "answer": "will",
+          "correct": false
+        },
+        {
+          "answer": "habe",
+          "correct": false
+        },
+        {
+          "answer": "esse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ich ___ eine Frau. (bin)",
+      "answers": [
+        {
+          "answer": "bin",
+          "correct": true
+        },
+        {
+          "answer": "habe",
+          "correct": false
+        },
+        {
+          "answer": "werde",
+          "correct": false
+        },
+        {
+          "answer": "mag",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Mein Freund ___ Fußball. (spielt)",
+      "answers": [
+        {
+          "answer": "spielt",
+          "correct": true
+        },
+        {
+          "answer": "arbeitet",
+          "correct": false
+        },
+        {
+          "answer": "fährt",
+          "correct": false
+        },
+        {
+          "answer": "lernt",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ich ___ um sieben Uhr aufstehen. (muss)",
+      "answers": [
+        {
+          "answer": "muss",
+          "correct": true
+        },
+        {
+          "answer": "kann",
+          "correct": false
+        },
+        {
+          "answer": "darf",
+          "correct": false
+        },
+        {
+          "answer": "will",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Mein Vater ___ in einem Büro. (arbeitet)",
+      "answers": [
+        {
+          "answer": "arbeitet",
+          "correct": true
+        },
+        {
+          "answer": "fährt",
+          "correct": false
+        },
+        {
+          "answer": "kocht",
+          "correct": false
+        },
+        {
+          "answer": "lernt",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ich ___ einen Kaffee trinken. (möchte)",
+      "answers": [
+        {
+          "answer": "möchte",
+          "correct": true
+        },
+        {
+          "answer": "will",
+          "correct": false
+        },
+        {
+          "answer": "kann",
+          "correct": false
+        },
+        {
+          "answer": "habe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Das Kind ___ gerne Schokolade. (isst)",
+      "answers": [
+        {
+          "answer": "isst",
+          "correct": true
+        },
+        {
+          "answer": "trinkt",
+          "correct": false
+        },
+        {
+          "answer": "mag",
+          "correct": false
+        },
+        {
+          "answer": "hat",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ich ___ eine Freundin. (habe)",
+      "answers": [
+        {
+          "answer": "habe",
+          "correct": true
+        },
+        {
+          "answer": "bin",
+          "correct": false
+        },
+        {
+          "answer": "werde",
+          "correct": false
+        },
+        {
+          "answer": "mag",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Der Film ___ sehr gut. (ist)",
+      "answers": [
+        {
+          "answer": "ist",
+          "correct": true
+        },
+        {
+          "answer": "hat",
+          "correct": false
+        },
+        {
+          "answer": "macht",
+          "correct": false
+        },
+        {
+          "answer": "geht",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ich ___ eine Jacke kaufen. (möchte)",
+      "answers": [
+        {
+          "answer": "möchte",
+          "correct": true
+        },
+        {
+          "answer": "will",
+          "correct": false
+        },
+        {
+          "answer": "habe",
+          "correct": false
+        },
+        {
+          "answer": "trage",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Meine Schwester ___ in der Stadt wohnen. (muss)",
+      "answers": [
+        {
+          "answer": "muss",
+          "correct": true
+        },
+        {
+          "answer": "kann",
+          "correct": false
+        },
+        {
+          "answer": "darf",
+          "correct": false
+        },
+        {
+          "answer": "will",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ich ___ eine Reise planen. (möchte)",
+      "answers": [
+        {
+          "answer": "möchte",
+          "correct": true
+        },
+        {
+          "answer": "will",
+          "correct": false
+        },
+        {
+          "answer": "kann",
+          "correct": false
+        },
+        {
+          "answer": "habe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Meine Eltern ___ im Urlaub immer viel wandern. (gehen)",
+      "answers": [
+        {
+          "answer": "gehen",
+          "correct": true
+        },
+        {
+          "answer": "fahren",
+          "correct": false
+        },
+        {
+          "answer": "bleiben",
+          "correct": false
+        },
+        {
+          "answer": "machen",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ich ___ um 8 Uhr aufstehen. (muss)",
+      "answers": [
+        {
+          "answer": "muss",
+          "correct": true
+        },
+        {
+          "answer": "kann",
+          "correct": false
+        },
+        {
+          "answer": "darf",
+          "correct": false
+        },
+        {
+          "answer": "will",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Mein Bruder ___ in einer Firma arbeiten. (möchte)",
+      "answers": [
+        {
+          "answer": "möchte",
+          "correct": true
+        },
+        {
+          "answer": "will",
+          "correct": false
+        },
+        {
+          "answer": "kann",
+          "correct": false
+        },
+        {
+          "answer": "hat",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ich ___ eine Tasse Tee trinken. (möchte)",
+      "answers": [
+        {
+          "answer": "möchte",
+          "correct": true
+        },
+        {
+          "answer": "will",
+          "correct": false
+        },
+        {
+          "answer": "kann",
+          "correct": false
+        },
+        {
+          "answer": "habe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Meine Freunde ___ gerne ins Kino. (gehen)",
+      "answers": [
+        {
+          "answer": "gehen",
+          "correct": true
+        },
+        {
+          "answer": "fahren",
+          "correct": false
+        },
+        {
+          "answer": "bleiben",
+          "correct": false
+        },
+        {
+          "answer": "machen",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ich ___ eine neue Wohnung suchen. (muss)",
+      "answers": [
+        {
+          "answer": "muss",
+          "correct": true
+        },
+        {
+          "answer": "kann",
+          "correct": false
+        },
+        {
+          "answer": "darf",
+          "correct": false
+        },
+        {
+          "answer": "will",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ich ___ meine Hausaufgaben machen. (muss)",
+      "answers": [
+        {
+          "answer": "muss",
+          "correct": true
+        },
+        {
+          "answer": "kann",
+          "correct": false
+        },
+        {
+          "answer": "darf",
+          "correct": false
+        },
+        {
+          "answer": "will",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

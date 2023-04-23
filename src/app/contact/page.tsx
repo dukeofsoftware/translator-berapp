@@ -1,9 +1,7 @@
-import React from 'react'
+import { Contact } from "@/components/pages"
 
 const page = () => {
-  return (
-    <div>page</div>
-  )
+  return <Contact />
 }
 
 export default page

@@ -6,7 +6,6 @@ export async function POST(request: Request) {
   const { prompt, language } = await request.json()
   try {
     const response = await openai.createChatCompletion({
-      
       model: "gpt-3.5-turbo",
       messages: [
         {

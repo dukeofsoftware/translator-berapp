@@ -1,0 +1,215 @@
+{
+  "level": "B2",
+  "quiz": [
+    {
+      "question": "I'm ___ my best to learn Spanish, but it's not easy.",
+      "answers": [
+        {
+          "answer": "doing",
+          "correct": true
+        },
+        {
+          "answer": "making",
+          "correct": false
+        },
+        {
+          "answer": "taking",
+          "correct": false
+        },
+        {
+          "answer": "having",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "She was ___ in a car accident last week, but fortunately she wasn't hurt badly.",
+      "answers": [
+        {
+          "answer": "involved",
+          "correct": true
+        },
+        {
+          "answer": "affected",
+          "correct": false
+        },
+        {
+          "answer": "injured",
+          "correct": false
+        },
+        {
+          "answer": "hit",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I'm ___ forward to the concert tonight, it should be amazing.",
+      "answers": [
+        {
+          "answer": "looking",
+          "correct": true
+        },
+        {
+          "answer": "seeing",
+          "correct": false
+        },
+        {
+          "answer": "going",
+          "correct": false
+        },
+        {
+          "answer": "watching",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "She ___ a great job on her presentation, everyone was impressed.",
+      "answers": [
+        {
+          "answer": "did",
+          "correct": true
+        },
+        {
+          "answer": "made",
+          "correct": false
+        },
+        {
+          "answer": "had",
+          "correct": false
+        },
+        {
+          "answer": "took",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I ___ a lot of time studying for my exams last semester.",
+      "answers": [
+        {
+          "answer": "spent",
+          "correct": true
+        },
+        {
+          "answer": "used",
+          "correct": false
+        },
+        {
+          "answer": "wasted",
+          "correct": false
+        },
+        {
+          "answer": "had",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I ___ the opportunity to travel when I was younger, but I regret not taking it.",
+      "answers": [
+        {
+          "answer": "had",
+          "correct": true
+        },
+        {
+          "answer": "took",
+          "correct": false
+        },
+        {
+          "answer": "missed",
+          "correct": false
+        },
+        {
+          "answer": "made",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I'm ___ to learn how to cook new dishes.",
+      "answers": [
+        {
+          "answer": "keen",
+          "correct": true
+        },
+        {
+          "answer": "interested",
+          "correct": false
+        },
+        {
+          "answer": "excited",
+          "correct": false
+        },
+        {
+          "answer": "curious",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I ___ to the gym three times a week to stay in shape.",
+      "answers": [
+        {
+          "answer": "go",
+          "correct": true
+        },
+        {
+          "answer": "went",
+          "correct": false
+        },
+        {
+          "answer": "have gone",
+          "correct": false
+        },
+        {
+          "answer": "going",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I ___ a difficult time understanding the instructions for the project.",
+      "answers": [
+        {
+          "answer": "had",
+          "correct": true
+        },
+        {
+          "answer": "got",
+          "correct": false
+        },
+        {
+          "answer": "made",
+          "correct": false
+        },
+        {
+          "answer": "took",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I ___ some new shoes for the party next week.",
+      "answers": [
+        {
+          "answer": "need",
+          "correct": true
+        },
+        {
+          "answer": "want",
+          "correct": false
+        },
+        {
+          "answer": "bought",
+          "correct": false
+        },
+        {
+          "answer": "have",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
