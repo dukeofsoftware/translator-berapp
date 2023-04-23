@@ -32,6 +32,7 @@
     "react-hook-form": "^7.43.9",
     "react-hook-form-mantine": "^1.0.8",
     "react-icons": "^4.8.0",
+    "react-imask": "^6.6.0",
     "react-toastify": "^9.1.2",
     "tailwindcss-animate": "^1.0.5",
     "yup": "^1.1.1",
