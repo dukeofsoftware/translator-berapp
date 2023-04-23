@@ -31,9 +31,8 @@ const Prompt = () => {
           toast.error(err)
           return err
         })
-      console.log(axiosResponse)
-      if (axiosResponse.choices) {
-        setValue("translatedText", axiosResponse.choices[0]?.message?.content)
+      if (axiosResponse) {
+        setValue("translatedText", axiosResponse.choices[0].message.content)
       }
 
       return axiosResponse
@@ -84,7 +83,7 @@ const Prompt = () => {
           <div className="grow w-full">
             <Textarea
               autosize
-              name="translatedText"
+              {...register("translatedText")}
               label="Translated text"
               disabled
               styles={{
@@ -102,7 +101,7 @@ const Prompt = () => {
                     cursor: "default",
                     backgroundColor:
                       theme.colorScheme === "dark"
-                        ? theme.colors.dark[5]
+                        ? theme.colors.dark[6]
                         : theme.colors.gray[0],
                   },
                 },

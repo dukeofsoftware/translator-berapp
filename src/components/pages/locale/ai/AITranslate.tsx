@@ -2,7 +2,7 @@ import Prompt from "./Prompt"
 
 const AITranslate = () => {
   return (
-    <div className="">
+    <div className="mt-24">
       <Prompt />
     </div>
   )
