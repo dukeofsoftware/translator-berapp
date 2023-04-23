@@ -64,17 +64,7 @@ export default function FeaturesSection() {
               Translate everything you want with our translator. We have a lot
               of languages for you.
             </Text>
-            <Link href="/auth/register">
-              <Button
-                variant="gradient"
-                gradient={{ deg: 133, from: "blue", to: "cyan" }}
-                size="lg"
-                radius="md"
-                mt="xl"
-              >
-                Get Started
-              </Button>
-            </Link>
+            
           </Col>
           <Col span={12} md={7}>
             <SimpleGrid

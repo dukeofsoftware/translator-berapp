@@ -21,6 +21,6 @@ export async function POST(request: Request) {
     console.log(response)
     return NextResponse.json(response)
   } catch (error: any) {
-    return NextResponse.json({ error: error.message })
+    return NextResponse.json({ error: error })
   }
 }
