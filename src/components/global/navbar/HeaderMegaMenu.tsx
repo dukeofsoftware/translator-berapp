@@ -113,7 +113,7 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
 
   const links = features.map((item) => (
     <HeaderLink
-      href={session ? (item.hrefSession as string) : (item.href as string)}
+      href={session ? item.hrefSession :  item.href }
       icon={item.icon}
       title={item.title}
       description={item.description}
