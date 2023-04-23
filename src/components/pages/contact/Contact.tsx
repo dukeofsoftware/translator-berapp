@@ -1,3 +1,4 @@
+"use client"
 import { yupResolver } from "@hookform/resolvers/yup"
 import {
   Button,
@@ -21,7 +22,7 @@ import { IMaskInput } from "react-imask"
 import { toast } from "react-toastify"
 
 import { contactSchema } from "@/lib/validation/contactSchema"
-import bg from "./bg.svg"
+import bg from "./waves.svg"
 
 const useStyles = createStyles((theme) => {
   const BREAKPOINT = theme.fn.smallerThan("sm")
