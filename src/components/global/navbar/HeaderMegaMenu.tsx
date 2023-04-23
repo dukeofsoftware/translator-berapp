@@ -58,7 +58,7 @@ const useStyles = createStyles((theme) => ({
       backgroundColor:
         theme.colorScheme === "dark"
           ? theme.colors.dark[6]
-          : theme.colors.gray[0],
+          : theme.colors.gray[1],
     }),
   },
 
@@ -204,7 +204,7 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
               About
             </Link>
             <Link href="/contact" className={classes.link}>
-              contact
+              Contact
             </Link>
           </Group>
           <Group className={classes.hiddenMobile}>
@@ -266,7 +266,7 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
             About
           </Link>
           <Link href="/contact" className={classes.link}>
-            contact
+            Contact
           </Link>
           <Divider
             my="sm"
