@@ -12,7 +12,7 @@ interface NavbarProps {
 }
 const Navbar: React.FC<NavbarProps> = ({ session }) => {
   return (
-    <Container>
+    <Container className="fixed top-0 w-full">
       <header className="flex justify-between items-center">
         <div className="text-lg font-extrabold dark:text-neutral-100 text-neutral-800">
           Translator

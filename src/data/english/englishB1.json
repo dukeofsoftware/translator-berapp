@@ -1,0 +1,215 @@
+{
+  "level": "B1",
+  "quizB1": [
+    {
+      "question": "She was ___ to work yesterday because her car broke down.",
+      "answers": [
+        {
+          "answer": "late",
+          "correct": true
+        },
+        {
+          "answer": "early",
+          "correct": false
+        },
+        {
+          "answer": "on time",
+          "correct": false
+        },
+        {
+          "answer": "absent",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I'm ___ tired today, I didn't sleep well last night.",
+      "answers": [
+        {
+          "answer": "very",
+          "correct": true
+        },
+        {
+          "answer": "much",
+          "correct": false
+        },
+        {
+          "answer": "too",
+          "correct": false
+        },
+        {
+          "answer": "enough",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I ___ my phone at home this morning, I need to go back and get it.",
+      "answers": [
+        {
+          "answer": "forgot",
+          "correct": true
+        },
+        {
+          "answer": "remembered",
+          "correct": false
+        },
+        {
+          "answer": "left",
+          "correct": false
+        },
+        {
+          "answer": "took",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I'm not ___ to go to the party tonight, I have to study for my exam.",
+      "answers": [
+        {
+          "answer": "able",
+          "correct": true
+        },
+        {
+          "answer": "willing",
+          "correct": false
+        },
+        {
+          "answer": "allowed",
+          "correct": false
+        },
+        {
+          "answer": "ready",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I ___ a lot of coffee in the morning to wake up.",
+      "answers": [
+        {
+          "answer": "drink",
+          "correct": true
+        },
+        {
+          "answer": "drank",
+          "correct": false
+        },
+        {
+          "answer": "have drunk",
+          "correct": false
+        },
+        {
+          "answer": "drinking",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I'm ___ for the job interview next week.",
+      "answers": [
+        {
+          "answer": "nervous",
+          "correct": true
+        },
+        {
+          "answer": "confident",
+          "correct": false
+        },
+        {
+          "answer": "happy",
+          "correct": false
+        },
+        {
+          "answer": "sad",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I ___ to watch TV after work every day.",
+      "answers": [
+        {
+          "answer": "like",
+          "correct": true
+        },
+        {
+          "answer": "liked",
+          "correct": false
+        },
+        {
+          "answer": "have liked",
+          "correct": false
+        },
+        {
+          "answer": "liking",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I have ___ my wallet, have you seen it?",
+      "answers": [
+        {
+          "answer": "lost",
+          "correct": true
+        },
+        {
+          "answer": "found",
+          "correct": false
+        },
+        {
+          "answer": "misplaced",
+          "correct": false
+        },
+        {
+          "answer": "disappeared",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I ___ some new clothes for my trip next week.",
+      "answers": [
+        {
+          "answer": "need",
+          "correct": true
+        },
+        {
+          "answer": "needed",
+          "correct": false
+        },
+        {
+          "answer": "have needed",
+          "correct": false
+        },
+        {
+          "answer": "needing",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I'm ___ forward to the weekend, I need a break from work.",
+      "answers": [
+        {
+          "answer": "looking",
+          "correct": true
+        },
+        {
+          "answer": "looked",
+          "correct": false
+        },
+        {
+          "answer": "have looked",
+          "correct": false
+        },
+        {
+          "answer": "look",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

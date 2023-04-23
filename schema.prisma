@@ -45,13 +45,18 @@ model Session {
   @@map(name: "sessions")
 }
 
+
+enum Role {
+  ADMIN
+  USER
+}
 model User {
   id        String    @id @default(cuid())
   name      String?
   username  String?   @unique
   email     String?   @unique
   emailVerified DateTime?
-
+  role      Role      @default(USER)
   password  String?
   image     String?
   createdAt DateTime  @default(now()) @map(name: "created_at")
@@ -70,4 +75,16 @@ model VerificationToken {
 
   @@unique([identifier, token])
   @@map(name: "verification_tokens")
+}
+
+model Contact {
+  id        String    @id @default(cuid())
+  name     String
+  email     String   
+  phoneNumber String
+  subject String
+  message String
+
+  createdAt DateTime  @default(now()) @map(name: "created_at")
+  @@map(name: "emails")
 }

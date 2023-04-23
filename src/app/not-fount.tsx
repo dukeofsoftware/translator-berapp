@@ -1,3 +1,6 @@
+"use client"
+
+import Link from "next/link"
 import {
   Button,
   Container,
@@ -66,9 +69,11 @@ export function NotFoundTitle() {
         address, or the page has been moved to another URL.
       </Text>
       <Group position="center">
-        <Button variant="subtle" size="md">
-          Take me back to home page
-        </Button>
+        <Link href="/">
+          <Button variant="subtle" size="md">
+            Take me back to home page
+          </Button>
+        </Link>
       </Group>
     </Container>
   )

@@ -1,7 +1,6 @@
 "use client"
 
 import dynamic from "next/dynamic"
-
 import { yupResolver } from "@hookform/resolvers/yup"
 import { Button, Container, Paper, TextInput, Tooltip } from "@mantine/core"
 import { useMutation } from "@tanstack/react-query"
@@ -63,11 +62,13 @@ const Dictionary = () => {
                 position="top-end"
                 withArrow
               >
-                <GrAlert
-                  size="1rem"
-                  style={{ display: "block", opacity: 0.75 }}
-                  className="text-red-500"
-                />
+                <div>
+                  <GrAlert
+                    size="1rem"
+                    style={{ display: "block", opacity: 0.75 }}
+                    className="text-red-500"
+                  />
+                </div>
               </Tooltip>
             }
           />
@@ -83,7 +84,6 @@ const Dictionary = () => {
         </form>
       </Paper>
       {dictionary && <DictionaryResponse dictionary={dictionary} />}
-
     </Container>
   )
 }

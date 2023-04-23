@@ -84,8 +84,7 @@ interface HeaderLinkProps {
   title: string
   description: string
   icon: IconType
-  href: string 
-
+  href?: string
 }
 const HeaderLink: React.FC<HeaderLinkProps> = ({
   title,
@@ -96,7 +95,7 @@ const HeaderLink: React.FC<HeaderLinkProps> = ({
   const { classes, theme } = useStyles()
 
   return (
-    <Link href={href} className="w-full">
+    <Link href={href || ""} className="w-full">
       <UnstyledButton className={classes.subLink} key={title}>
         <Group noWrap align="flex-start">
           <ThemeIcon size={34} variant="default" radius="md">

@@ -1,0 +1,404 @@
+{
+  "level": "A1",
+  "quiz": [
+    {
+      "question": "I ___ a student.",
+      "answers": [
+        {
+          "answer": "am",
+          "correct": true
+        },
+        {
+          "answer": "is",
+          "correct": false
+        },
+        {
+          "answer": "are",
+          "correct": false
+        },
+        {
+          "answer": "be",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "She ___ from France.",
+      "answers": [
+        {
+          "answer": "is",
+          "correct": false
+        },
+        {
+          "answer": "am",
+          "correct": false
+        },
+        {
+          "answer": "are",
+          "correct": false
+        },
+        {
+          "answer": "comes",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "I ___ my homework every day.",
+      "answers": [
+        {
+          "answer": "do",
+          "correct": true
+        },
+        {
+          "answer": "does",
+          "correct": false
+        },
+        {
+          "answer": "did",
+          "correct": false
+        },
+        {
+          "answer": "done",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "He ___ football on Sundays.",
+      "answers": [
+        {
+          "answer": "plays",
+          "correct": true
+        },
+        {
+          "answer": "play",
+          "correct": false
+        },
+        {
+          "answer": "is playing",
+          "correct": false
+        },
+        {
+          "answer": "played",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "She ___ to the cinema every week.",
+      "answers": [
+        {
+          "answer": "goes",
+          "correct": true
+        },
+        {
+          "answer": "go",
+          "correct": false
+        },
+        {
+          "answer": "is going",
+          "correct": false
+        },
+        {
+          "answer": "went",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I ___ a sandwich for lunch.",
+      "answers": [
+        {
+          "answer": "have",
+          "correct": true
+        },
+        {
+          "answer": "has",
+          "correct": false
+        },
+        {
+          "answer": "had",
+          "correct": false
+        },
+        {
+          "answer": "having",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I ___ a lot of friends.",
+      "answers": [
+        {
+          "answer": "have",
+          "correct": true
+        },
+        {
+          "answer": "has",
+          "correct": false
+        },
+        {
+          "answer": "had",
+          "correct": false
+        },
+        {
+          "answer": "having",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "She ___ English at school.",
+      "answers": [
+        {
+          "answer": "studies",
+          "correct": true
+        },
+        {
+          "answer": "study",
+          "correct": false
+        },
+        {
+          "answer": "is studying",
+          "correct": false
+        },
+        {
+          "answer": "studied",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "My favorite ___ is blue.",
+      "answers": [
+        {
+          "answer": "color",
+          "correct": true
+        },
+        {
+          "answer": "food",
+          "correct": false
+        },
+        {
+          "answer": "sport",
+          "correct": false
+        },
+        {
+          "answer": "movie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "He ___ to the park on Saturdays.",
+      "answers": [
+        {
+          "answer": "goes",
+          "correct": true
+        },
+        {
+          "answer": "go",
+          "correct": false
+        },
+        {
+          "answer": "is going",
+          "correct": false
+        },
+        {
+          "answer": "went",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "My sister ___ a book right now.",
+      "answers": [
+        {
+          "answer": "is reading",
+          "correct": true
+        },
+        {
+          "answer": "reads",
+          "correct": false
+        },
+        {
+          "answer": "read",
+          "correct": false
+        },
+        {
+          "answer": "reading",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I ___ to bed at 10 pm.",
+      "answers": [
+        {
+          "answer": "go",
+          "correct": true
+        },
+        {
+          "answer": "goes",
+          "correct": false
+        },
+        {
+          "answer": "went",
+          "correct": false
+        },
+        {
+          "answer": "going",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "She ___ coffee in the morning.",
+      "answers": [
+        {
+          "answer": "drinks",
+          "correct": true
+        },
+        {
+          "answer": "drink",
+          "correct": false
+        },
+        {
+          "answer": "is drinking",
+          "correct": false
+        },
+        {
+          "answer": "drunk",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I ___ my friends at the park yesterday.",
+      "answers": [
+        {
+          "answer": "met",
+          "correct": true
+        },
+        {
+          "answer": "meet",
+          "correct": false
+        },
+        {
+          "answer": "meets",
+          "correct": false
+        },
+        {
+          "answer": "meeting",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "He ___ a bike to work every day.",
+      "answers": [
+        {
+          "answer": "rides",
+          "correct": true
+        },
+        {
+          "answer": "ride",
+          "correct": false
+        },
+        {
+          "answer": "is riding",
+          "correct": false
+        },
+        {
+          "answer": "rode",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "My brother ___ his homework in his bedroom.",
+      "answers": [
+        {
+          "answer": "does",
+          "correct": true
+        },
+        {
+          "answer": "do",
+          "correct": false
+        },
+        {
+          "answer": "did",
+          "correct": false
+        },
+        {
+          "answer": "done",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "My mom ___ dinner every night.",
+      "answers": [
+        {
+          "answer": "cooks",
+          "correct": true
+        },
+        {
+          "answer": "cook",
+          "correct": false
+        },
+        {
+          "answer": "is cooking",
+          "correct": false
+        },
+        {
+          "answer": "cooked",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "I ___ a shower in the morning.",
+      "answers": [
+        {
+          "answer": "take",
+          "correct": true
+        },
+        {
+          "answer": "takes",
+          "correct": false
+        },
+        {
+          "answer": "took",
+          "correct": false
+        },
+        {
+          "answer": "taking",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "My favorite ___ is pizza.",
+      "answers": [
+        {
+          "answer": "food",
+          "correct": true
+        },
+        {
+          "answer": "color",
+          "correct": false
+        },
+        {
+          "answer": "sport",
+          "correct": false
+        },
+        {
+          "answer": "movie",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

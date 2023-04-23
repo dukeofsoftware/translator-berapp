@@ -23,30 +23,28 @@ const DictionaryResponse: React.FC<DictionaryResponseProps> = ({
       </div>
       <List listStyleType="disc">
         {dictionary[0].meanings?.map((meaning: any) => (
-          <List.Item key={meaning?.partOfSpeech} >
+          <List.Item key={meaning?.partOfSpeech}>
             {meaning?.partOfSpeech}
-            <List spacing={"md"} type="ordered" listStyleType="upperGreek" withPadding>
-
+            <List
+              spacing={"md"}
+              type="ordered"
+              listStyleType="upperGreek"
+              withPadding
+            >
               {meaning?.definitions.map((definition: any) => (
-                <List.Item key={definition.definition} >
+                <List.Item key={definition.definition}>
                   {definition?.definition}
                   <List withPadding>
-                    <List.Item icon={null} className="text-sky-600">{definition?.example}</List.Item>
+                    <List.Item icon={null} className="text-sky-600">
+                      {definition?.example}
+                    </List.Item>
                   </List>
                 </List.Item>
-
-
-
               ))}
             </List>
-
           </List.Item>
-
-
-
         ))}
-      </List >
-
+      </List>
     </Paper>
   )
 }

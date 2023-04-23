@@ -14,7 +14,6 @@ const GoogleAuth: React.FC<GoogleAuthProps> = ({ isLoading, children }) => {
       onClick={() => signIn("google")}
       disabled={isLoading}
     >
-      <div>asdbuıbadb</div>
       <FcGoogle className="h-8 w-8" />
       <Text fz="md" fw={700}>
         {children}

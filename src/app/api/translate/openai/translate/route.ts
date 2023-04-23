@@ -6,22 +6,20 @@ export async function POST(request: Request) {
   const { prompt, language } = await request.json()
   try {
     const response = await openai.createChatCompletion({
-      
       model: "gpt-3.5-turbo",
       messages: [
         {
           role: "system",
-          content: "You are a helpful assistant that translates languages.",
+          content: "Helpful assistant translates languages.",
         },
         {
           role: "user",
-          content: `Translate the following text to ${language}: ${prompt}}`,
+          content: `Language ${language} prompt: ${prompt}}`,
         },
       ],
     })
-    console.log(response)
-    return NextResponse.json(response)
+    return NextResponse.json(response.data)
   } catch (error: any) {
-    return NextResponse.json({ error: error.message })
+    return NextResponse.json({ error: error })
   }
 }

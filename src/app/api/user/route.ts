@@ -1,6 +1,11 @@
 import { NextResponse } from "next/server"
 
-import { createUser, getAllUsers, getCurrentUser } from "@/lib/prisma/user"
+import {
+  createUser,
+  deleteUser,
+  getAllUsers,
+  getCurrentUser,
+} from "@/lib/prisma/user"
 
 export async function GET() {
   const users = await getAllUsers()
@@ -22,6 +27,23 @@ export async function POST(request: Request) {
 
     if (!user) {
       throw new Error("Kullanıcı oluşturulamadı.")
+    }
+    return NextResponse.json({ user })
+  } catch (error: any) {
+    throw new Error(error.message)
+  }
+}
+export async function DELETE(request: Request) {
+  try {
+    const { id, password } = await request.json()
+    if (!id) {
+      throw new Error("Lütfen tüm alanları doldurunuz.")
+    }
+
+    const user = await deleteUser(id, password)
+
+    if (!user) {
+      throw new Error("Kullanıcı silinemedi.")
     }
     return NextResponse.json({ user })
   } catch (error: any) {
