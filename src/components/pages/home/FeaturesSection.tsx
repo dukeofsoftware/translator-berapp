@@ -1,9 +1,8 @@
 "use client"
 
-import Link from "next/link"
 import { features } from "@/constants"
 import {
-  Button,
+  
   Col,
   Container,
   Grid,

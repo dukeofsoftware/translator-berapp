@@ -87,9 +87,8 @@ const useStyles = createStyles((theme) => ({
     marginTop: theme.spacing.sm,
     padding: `${theme.spacing.md} calc(${theme.spacing.md} * 2)`,
     paddingBottom: theme.spacing.xl,
-    borderTop: `${rem(1)} solid ${
-      theme.colorScheme === "dark" ? theme.colors.dark[5] : theme.colors.gray[1]
-    }`,
+    borderTop: `${rem(1)} solid ${theme.colorScheme === "dark" ? theme.colors.dark[5] : theme.colors.gray[1]
+      }`,
   },
 
   hiddenMobile: {
@@ -113,7 +112,7 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
 
   const links = features.map((item) => (
     <HeaderLink
-      href={session ? item.hrefSession :  item.href }
+      href={item.hrefSession}
       icon={item.icon}
       title={item.title}
       description={item.description}
@@ -127,12 +126,12 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
       <Header
         height={70}
         px="md"
-        className="bg-slate-50/70 dark:bg-slate-900/50"
+        className=""
       >
         <Group
           position="apart"
           sx={{ height: "100%" }}
-          className="bg-slate-50/70 dark:bg-slate-900/50"
+          className=""
         >
           <div className="text-lg font-extrabold dark:text-neutral-100 text-neutral-800">
             <Link href={"/"}>Translator</Link>
@@ -147,59 +146,61 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
                 Home
               </Link>
             )}
+            {session && (
 
-            <HoverCard
-              width={600}
-              position="bottom"
-              radius="md"
-              shadow="md"
-              withinPortal
-            >
-              <HoverCard.Target>
-                <Link href="/features" className={classes.link}>
-                  <Center inline>
-                    <Box component="span" mr={5}>
-                      Features
-                    </Box>
-                    <AiOutlineDown size={16} color={theme.fn.primaryColor()} />
-                  </Center>
-                </Link>
-              </HoverCard.Target>
-              <HoverCard.Dropdown sx={{ overflow: "hidden" }}>
-                <Group position="apart" px="md">
-                  <Text fw={500}>Features</Text>
-                  <Link
-                    href="/features"
-                    className="font-light text-sm text-sky-500 hover:underline underline-offset-1 "
-                  >
-                    View all
+              <HoverCard
+                width={600}
+                position="bottom"
+                radius="md"
+                shadow="md"
+                withinPortal
+              >
+                <HoverCard.Target>
+                  <Link href="/features" className={classes.link}>
+                    <Center inline>
+                      <Box component="span" mr={5}>
+                        Features
+                      </Box>
+                      <AiOutlineDown size={16} color={theme.fn.primaryColor()} />
+                    </Center>
                   </Link>
-                </Group>
-                <Divider
-                  my="sm"
-                  mx="-md"
-                  color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
-                />
-                <SimpleGrid cols={2} spacing={0}>
-                  {links}
-                </SimpleGrid>
-                <div className={classes.dropdownFooter}>
-                  <Group position="apart">
-                    <div>
-                      <Text fw={500} fz="sm">
-                        Get started
-                      </Text>
-                      <Text size="xs" color="dimmed">
-                        Try paid version
-                      </Text>
-                    </div>
-                    <Link href="/pricing">
-                      <Button variant="default">Pricing</Button>
+                </HoverCard.Target>
+                <HoverCard.Dropdown sx={{ overflow: "hidden" }}>
+                  <Group position="apart" px="md">
+                    <Text fw={500}>Features</Text>
+                    <Link
+                      href="/features"
+                      className="font-light text-sm text-sky-500 hover:underline underline-offset-1 "
+                    >
+                      View all
                     </Link>
                   </Group>
-                </div>
-              </HoverCard.Dropdown>
-            </HoverCard>
+                  <Divider
+                    my="sm"
+                    mx="-md"
+                    color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
+                  />
+                  <SimpleGrid cols={2} spacing={0}>
+                    {links}
+                  </SimpleGrid>
+                  <div className={classes.dropdownFooter}>
+                    <Group position="apart">
+                      <div>
+                        <Text fw={500} fz="sm">
+                          Get started
+                        </Text>
+                        <Text size="xs" color="dimmed">
+                          Try paid version
+                        </Text>
+                      </div>
+                      <Link href="/pricing">
+                        <Button variant="default">Pricing</Button>
+                      </Link>
+                    </Group>
+                  </div>
+                </HoverCard.Dropdown>
+              </HoverCard>
+            )}
             <Link href="/about" className={classes.link}>
               About
             </Link>

@@ -28,7 +28,9 @@
       "@/hooks": ["./src/hooks/*"],
       "@/pages": ["./src/pages/*"],
       "@/types": ["./src/types/*"],
-      "@/lib": ["./src/lib/*"]
+      "@/lib": ["./src/lib/*"],
+      "@/data": ["./src/data/*"]
+
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

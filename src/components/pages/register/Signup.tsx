@@ -134,8 +134,6 @@ const Signup = () => {
               strength={strength}
               color={color}
               checks={checks}
-              value={watchPassword}
-              requirements={requirements}
               register={register}
             />
           </div>

@@ -81,7 +81,7 @@ const Prompt = () => {
             />
           </div>
           <div className="grow w-full">
-            <Textarea
+          <Textarea
               autosize
               {...register("translatedText")}
               label="Translated text"
