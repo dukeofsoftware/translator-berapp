@@ -1,7 +1,7 @@
-import React from "react"
+import { AITranslate } from "@/components/pages"
 
-const page = () => {
-  return <div>page</div>
+const Page = () => {
+  return <AITranslate />
 }
 
-export default page
+export default Page

@@ -6,6 +6,7 @@ import { getSession } from "@/lib/prisma/user"
 import { Footer } from "@/components/global/footer"
 import { HeaderMegaMenu } from "@/components/global/navbar/HeaderMegaMenu"
 import { Providers } from "@/components/providers/"
+import "react-toastify/dist/ReactToastify.css"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -47,14 +48,14 @@ export default async function RootLayout({
         className={
           `${
             process.env.DEVELOPMENT === "true" && "debug-screens"
-          } min-h-screen w-full 
-      
+          } min-h-screen h-full w-full 
+          antialiased
           ` + inter.className
         }
       >
         <Providers>
           <HeaderMegaMenu session={session} />
-          {children}
+          <div className="min-h-screen h-full w-full ">{children}</div>
           <Footer />
         </Providers>
       </body>

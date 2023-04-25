@@ -24,6 +24,9 @@ const useStyles = createStyles((theme) => ({
     borderTop: `${rem(1)} solid ${
       theme.colorScheme === "dark" ? theme.colors.dark[5] : theme.colors.gray[2]
     }`,
+    bottom: 0,
+    position: "relative",
+    width: "100%",
   },
 
   logo: {
@@ -115,15 +118,6 @@ const useStyles = createStyles((theme) => ({
 }))
 
 const footerData = [
-  {
-    title: "About",
-    links: [
-      { label: "About", link: "/about" },
-      { label: "Features", link: "/features" },
-      { label: "Pricing", link: "/pricing" },
-      { label: "Contact Us", link: "/contact" },
-    ],
-  },
   {
     title: "Social",
     links: [

@@ -2,7 +2,6 @@ import { NextResponse } from "next/server"
 import axios from "axios"
 
 export async function GET() {
-
   const options = {
     method: "GET",
     url: "https://dnaber-languagetool.p.rapidapi.com/v2/languages",
@@ -52,9 +51,9 @@ export async function POST(request: Request) {
           status: 400,
         })
       })
-      return NextResponse.json(response,{
-        status:200
-      })
+    return NextResponse.json(response, {
+      status: 200,
+    })
   } catch (error: any) {
     return new Response(error, {
       status: 400,

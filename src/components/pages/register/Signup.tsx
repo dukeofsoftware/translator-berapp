@@ -40,6 +40,7 @@ const Signup = () => {
   })
 
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
+    console.log("data", data)
     if (data.password !== data.passwordConfirmation) {
       toast.error("Passwords do not match")
       return
@@ -93,15 +94,6 @@ const Signup = () => {
           Sign Up
         </Title>
         <form className="grid gap-5" onSubmit={handleSubmit(onSubmit)}>
-          <div className="grid gap-2">
-            <TextInput
-              placeholder="Username"
-              label="Username"
-              withAsterisk
-              error={errors.username?.message?.toString()}
-              {...register("username")}
-            />
-          </div>
           <div className="grid gap-2">
             <TextInput
               placeholder="Your name"
@@ -159,7 +151,7 @@ const Signup = () => {
         <Text fz={"sm"} ta={"center"}>
           Already have an Account?{" "}
           <Link
-            href={"/login"}
+            href={"/auth/login"}
             className="font-bold text-sky-500 hover:underline "
           >
             Login

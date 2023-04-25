@@ -1,46 +1,15 @@
 "use client"
 
-import { Avatar,  Menu, Text } from "@mantine/core"
+import { Avatar, Menu, Text } from "@mantine/core"
 import { Session } from "next-auth"
 import { signOut } from "next-auth/react"
-import { AiFillHeart, AiOutlineLogin } from "react-icons/ai"
-import { BsFillTrash3Fill } from "react-icons/bs"
-import { FaHistory } from "react-icons/fa"
-import { IoMdSettings } from "react-icons/io"
+import { AiOutlineLogin } from "react-icons/ai"
 
 interface UserMenuProps {
   session: Session | null
 }
-interface MenuItem {
-  icon: JSX.Element
-  label: string
-  href?: string
-  action?: () => void
-}
-const UserMenu: React.FC<UserMenuProps> = ({ session }) => {
-  const menuItems = [
-    {
-      icon: <IoMdSettings />,
-      label: "Settings",
-      href: "/berapp/settings",
-    },
-    {
-      icon: <AiFillHeart />,
-      label: "Favorites",
-      href: "/berapp/favorites",
-    },
 
-    {
-      icon: <FaHistory />,
-      label: "History",
-      href: "/berapp/history",
-    },
-    {
-      icon: <AiOutlineLogin />,
-      label: "Logout",
-      action: () => signOut(),
-    },
-  ]
+const UserMenu: React.FC<UserMenuProps> = ({ session }) => {
   return (
     <Menu
       shadow="md"
@@ -58,29 +27,8 @@ const UserMenu: React.FC<UserMenuProps> = ({ session }) => {
 
       <Menu.Dropdown>
         <Menu.Label>Application</Menu.Label>
-        {menuItems.map((item: MenuItem, index) => (
-          <>
-            {item.action ? (
-              <Menu.Item
-                key={`${item.label}-${index}`}
-                icon={item.icon}
-                onClick={item.action}
-              >
-                {item.label}
-              </Menu.Item>
-            ) : (
-              <Menu.Item key={`${item.label}-${index}`} icon={item.icon}>
-                {item.label}
-              </Menu.Item>
-            )}
-          </>
-        ))}
-
-        <Menu.Divider />
-
-        <Menu.Label>Danger zone</Menu.Label>
-        <Menu.Item color="red" icon={<BsFillTrash3Fill size={14} />}>
-          Delete my account
+        <Menu.Item icon={<AiOutlineLogin />} onClick={() => signOut()}>
+          Logout
         </Menu.Item>
       </Menu.Dropdown>
     </Menu>

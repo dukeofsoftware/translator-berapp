@@ -1,7 +1,7 @@
 import { QuizPage } from "@/components/pages"
 
 const page = () => {
-  return <QuizPage/>
+  return <QuizPage />
 }
 
 export default page

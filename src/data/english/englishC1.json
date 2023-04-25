@@ -1,96 +1,98 @@
 {
-    "level":"C1",
-    "quiz":[
-        {
-          "question": "Choose the correct form of the verb: 'If she _____ (be) here, she would help us.'",
-          "answers": [
-            { "answer": "is", "correct": false },
-            { "answer": "was", "correct": true },
-            { "answer": "were", "correct": false },
-            { "answer": "will be", "correct": false }
-          ]
-        },
-        {
-          "question": "Select the correct meaning of the idiom 'to bite the bullet':",
-          "answers": [
-            { "answer": "to avoid a difficult situation", "correct": false },
-            { "answer": "to face a difficult situation with courage", "correct": true },
-            { "answer": "to criticize someone", "correct": false },
-            { "answer": "to make a quick decision", "correct": false }
-          ]
-        },
-        {
-          "question": "Complete the sentence with the correct form of the verb: 'She _____ (live) in Paris for five years before she moved to London.'",
-          "answers": [
-            { "answer": "lived", "correct": false },
-            { "answer": "has lived", "correct": false },
-            { "answer": "had lived", "correct": true },
-            { "answer": "was living", "correct": false }
-          ]
-        },
-        {
-          "question": "Choose the correct preposition to complete the sentence: 'He is responsible _____ managing the team.'",
-          "answers": [
-            { "answer": "for", "correct": true },
-            { "answer": "in", "correct": false },
-            { "answer": "at", "correct": false },
-            { "answer": "on", "correct": false }
-          ]
-        },
-        {
-          "question": "Identify the correct passive form of the sentence: 'They have completed the assignment.'",
-          "answers": [
-            { "answer": "The assignment has been completed.", "correct": true },
-            { "answer": "The assignment was completed.", "correct": false },
-            { "answer": "The assignment is completed.", "correct": false },
-            { "answer": "The assignment had been completed.", "correct": false }
-          ]
-        },
-        {
-          "question": "Choose the correct synonym for 'tenacious':",
-          "answers": [
-            { "answer": "weak", "correct": false },
-            { "answer": "determined", "correct": true },
-            { "answer": "lazy", "correct": false },
-            { "answer": "unmotivated", "correct": false }
-          ]
-        },
-        {
-          "question": "Select the correct meaning of the phrasal verb 'to look up to':",
-          "answers": [
-            { "answer": "to search for information", "correct": false },
-            { "answer": "to admire or respect someone", "correct": true },
-            { "answer": "to expect something good to happen", "correct": false },
-            { "answer": "to visit someone after a long time", "correct": false }
-          ]
-        },
-        {
-          "question": "Complete the sentence with the correct form of the verb: 'By this time next year, I _____ (graduate) from university.'",
-          "answers": [
-            { "answer": "will graduate", "correct": false },
-            { "answer": "will have graduated", "correct": true },
-            { "answer": "am graduating", "correct": false },
-            { "answer": "have graduated", "correct": false }
-          ]
-        },
-        {
-          "question": "Choose the correct preposition to complete the sentence: 'She is proficient _____ three languages.'",
-          "answers": [
-            { "answer": "in", "correct": true },
-            { "answer": "at", "correct": false },
-            { "answer": "on", "correct": false },
-            { "answer": "with", "correct": false }
-          ]
-        },
-        {
-          "question": "Identify the correct passive form of the sentence: 'Someone will clean the room tomorrow.'",
-          "answers": [
-            { "answer": "The room will be cleaned tomorrow.", "correct": true },
-            { "answer": "The room will clean tomorrow.", "correct": false },
-            { "answer": "The room is cleaned tomorrow.", "correct": false },
-            { "answer": "The room was cleaned tomorrow.", "correct": false }
-          ]
-        }
+  "level": "C1",
+  "quiz": [
+    {
+      "question": "Choose the correct form of the verb: 'If she _____ (be) here, she would help us.'",
+      "answers": [
+        { "answer": "is", "correct": false },
+        { "answer": "was", "correct": true },
+        { "answer": "were", "correct": false },
+        { "answer": "will be", "correct": false }
       ]
-      
+    },
+    {
+      "question": "Select the correct meaning of the idiom 'to bite the bullet':",
+      "answers": [
+        { "answer": "to avoid a difficult situation", "correct": false },
+        {
+          "answer": "to face a difficult situation with courage",
+          "correct": true
+        },
+        { "answer": "to criticize someone", "correct": false },
+        { "answer": "to make a quick decision", "correct": false }
+      ]
+    },
+    {
+      "question": "Complete the sentence with the correct form of the verb: 'She _____ (live) in Paris for five years before she moved to London.'",
+      "answers": [
+        { "answer": "lived", "correct": false },
+        { "answer": "has lived", "correct": false },
+        { "answer": "had lived", "correct": true },
+        { "answer": "was living", "correct": false }
+      ]
+    },
+    {
+      "question": "Choose the correct preposition to complete the sentence: 'He is responsible _____ managing the team.'",
+      "answers": [
+        { "answer": "for", "correct": true },
+        { "answer": "in", "correct": false },
+        { "answer": "at", "correct": false },
+        { "answer": "on", "correct": false }
+      ]
+    },
+    {
+      "question": "Identify the correct passive form of the sentence: 'They have completed the assignment.'",
+      "answers": [
+        { "answer": "The assignment has been completed.", "correct": true },
+        { "answer": "The assignment was completed.", "correct": false },
+        { "answer": "The assignment is completed.", "correct": false },
+        { "answer": "The assignment had been completed.", "correct": false }
+      ]
+    },
+    {
+      "question": "Choose the correct synonym for 'tenacious':",
+      "answers": [
+        { "answer": "weak", "correct": false },
+        { "answer": "determined", "correct": true },
+        { "answer": "lazy", "correct": false },
+        { "answer": "unmotivated", "correct": false }
+      ]
+    },
+    {
+      "question": "Select the correct meaning of the phrasal verb 'to look up to':",
+      "answers": [
+        { "answer": "to search for information", "correct": false },
+        { "answer": "to admire or respect someone", "correct": true },
+        { "answer": "to expect something good to happen", "correct": false },
+        { "answer": "to visit someone after a long time", "correct": false }
+      ]
+    },
+    {
+      "question": "Complete the sentence with the correct form of the verb: 'By this time next year, I _____ (graduate) from university.'",
+      "answers": [
+        { "answer": "will graduate", "correct": false },
+        { "answer": "will have graduated", "correct": true },
+        { "answer": "am graduating", "correct": false },
+        { "answer": "have graduated", "correct": false }
+      ]
+    },
+    {
+      "question": "Choose the correct preposition to complete the sentence: 'She is proficient _____ three languages.'",
+      "answers": [
+        { "answer": "in", "correct": true },
+        { "answer": "at", "correct": false },
+        { "answer": "on", "correct": false },
+        { "answer": "with", "correct": false }
+      ]
+    },
+    {
+      "question": "Identify the correct passive form of the sentence: 'Someone will clean the room tomorrow.'",
+      "answers": [
+        { "answer": "The room will be cleaned tomorrow.", "correct": true },
+        { "answer": "The room will clean tomorrow.", "correct": false },
+        { "answer": "The room is cleaned tomorrow.", "correct": false },
+        { "answer": "The room was cleaned tomorrow.", "correct": false }
+      ]
+    }
+  ]
 }

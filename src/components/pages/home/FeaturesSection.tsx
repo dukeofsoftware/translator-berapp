@@ -2,7 +2,6 @@
 
 import { features } from "@/constants"
 import {
-  
   Col,
   Container,
   Grid,
@@ -63,7 +62,6 @@ export default function FeaturesSection() {
               Translate everything you want with our translator. We have a lot
               of languages for you.
             </Text>
-            
           </Col>
           <Col span={12} md={7}>
             <SimpleGrid

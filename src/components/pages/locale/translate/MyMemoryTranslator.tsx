@@ -68,76 +68,75 @@ const MyMemoryTranslator = () => {
           onSubmit={handleSubmit(onSubmit)}
           className="flex  gap-2 items-center my-12 flex-col w-full"
         >
-          <div className="flex gap-2 w-full">
-            <div className="flex flex-col gap-2 w-full">
+          <div className="flex md:flex-row flex-col gap-2 w-full">
             <Select
-                disabled={isLoading}
-                withAsterisk
-                name="languageFrom"
-                label="From"
-                placeholder="Select language"
-                data={categories?.languages! || []}
-                searchable
-                clearable
-                maxDropdownHeight={280}
-                control={control}
-                error={errors.languageFrom?.message?.toString()}
-              />
-              <Textarea
-                placeholder="Enter text to translate"
-                label="Text to translate"
-                withAsterisk
-                error={errors.text?.message?.toString()}
-                minRows={5}
-                name="text"
-                control={control}
-                autosize
-              />
-            </div>
-            <div className="flex flex-col gap-2 w-full">
-              <Select
-                error={errors.languageTo?.message?.toString()}
-                disabled={isLoading}
-                withAsterisk
-                name="languageTo"
-                label="To"
-                placeholder="Select language"
-                data={categories?.languages! || []}
-                searchable
-                clearable
-                maxDropdownHeight={280}
-                control={control}
-              />
-              <Textarea
-                autosize
-                name="translatedText"
-                label="Translated text"
-                minRows={5}
-                control={control}
-                disabled
-                styles={{
-                  input: {
+              disabled={isLoading}
+              withAsterisk
+              name="languageFrom"
+              label="From"
+              placeholder="Select language"
+              data={categories?.languages! || []}
+              searchable
+              clearable
+              maxDropdownHeight={280}
+              control={control}
+              error={errors.languageFrom?.message?.toString()}
+            />
+            <Select
+              error={errors.languageTo?.message?.toString()}
+              disabled={isLoading}
+              withAsterisk
+              name="languageTo"
+              label="To"
+              placeholder="Select language"
+              data={categories?.languages! || []}
+              searchable
+              clearable
+              maxDropdownHeight={280}
+              control={control}
+            />
+          </div>
+          <div className="flex flex-col  md:flex-rowgap-2 w-full">
+            <Textarea
+              placeholder="Enter text to translate"
+              label="Text to translate"
+              withAsterisk
+              error={errors.text?.message?.toString()}
+              minRows={5}
+              name="text"
+              control={control}
+              autosize
+            />
+
+            <Textarea
+              autosize
+              name="translatedText"
+              label="Translated text"
+              minRows={5}
+              control={control}
+              disabled
+              styles={{
+                input: {
+                  backgroundColor:
+                    theme.colorScheme === "dark"
+                      ? theme.colors.dark[6]
+                      : theme.colors.gray[0],
+
+                  cursor: "default",
+                  ":disabled": {
+                    color:
+                      theme.colorScheme === "dark"
+                        ? theme.colors.dark[0]
+                        : theme.colors.dark[8],
+                    cursor: "default",
                     backgroundColor:
                       theme.colorScheme === "dark"
                         ? theme.colors.dark[6]
                         : theme.colors.gray[0],
-
-                    cursor: "default",
-                    ":disabled": {
-                      color:
-                        theme.colorScheme === "dark"
-                          ? theme.colors.dark[0]
-                          : theme.colors.dark[8],
-                      cursor: "default",
-                      backgroundColor:
-                        theme.colorScheme === "dark"
-                          ? theme.colors.dark[6]
-                          : theme.colors.gray[0],
-                    },
                   },
-                }}
-              />
-            </div>
+                },
+              }}
+            />
           </div>
           <Button
             disabled={isLoading}
