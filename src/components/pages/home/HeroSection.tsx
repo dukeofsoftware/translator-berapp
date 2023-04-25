@@ -128,12 +128,14 @@ export function HeroSection() {
                 Get started
               </Button>
             </Link>
-            <Button
-              className={cx(classes.control, classes.secondaryControl)}
-              size="lg"
-            >
-              Pricing
-            </Button>
+            <Link href={"/auth/login"}>
+              <Button
+                className={cx(classes.control, classes.secondaryControl)}
+                size="lg"
+              >
+                Login
+              </Button>
+            </Link>
           </div>
         </div>
       </Container>

@@ -13,7 +13,6 @@ const HomePage = () => {
       <HeroSection />
       <FeaturesSection />
       <AskedQuestions />
-
     </div>
   )
 }

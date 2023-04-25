@@ -1,7 +1,7 @@
-import React from "react"
+import { QuizPage } from "@/components/pages"
 
 const page = () => {
-  return <div>page</div>
+  return <QuizPage />
 }
 
 export default page

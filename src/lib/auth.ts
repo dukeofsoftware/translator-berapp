@@ -93,6 +93,7 @@ export const authOptions: NextAuthOptions = {
         name: dbUser.name,
         email: dbUser.email,
         picture: dbUser.image,
+        provider: dbUser.emailVerified,
       }
     },
   },

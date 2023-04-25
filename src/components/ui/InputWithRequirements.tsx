@@ -17,9 +17,7 @@ interface InputWithRequirementsProps {
   icon: IconType
   color?: string | undefined
   strength: number
-  value: string
   checks: any
-  requirements: RequirementType[]
   visible: boolean | undefined
   onVisibilityChange: (visible: boolean) => void
   register: UseFormRegister<FieldValues>
@@ -34,10 +32,8 @@ const InputWithRequirements: React.FC<InputWithRequirementsProps> = ({
   icon: Icon,
   color,
   strength,
-  value,
   checks,
   register,
-  requirements,
   ...props
 }) => {
   const [popoverOpened, setPopoverOpened] = useState(false)

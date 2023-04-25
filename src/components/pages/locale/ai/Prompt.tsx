@@ -68,7 +68,7 @@ const Prompt = () => {
           error={errors.language && errors.language.message?.toString()}
           data={openAILanguageSelectOptions}
         />
-        <div className="flex  gap-2">
+        <div className="flex md:flex-row flex-col gap-2">
           <div className="grow w-full">
             <Textarea
               label="Prompt"

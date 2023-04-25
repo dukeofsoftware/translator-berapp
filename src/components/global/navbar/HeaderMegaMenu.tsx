@@ -1,7 +1,9 @@
 "use client"
 
+import { useEffect } from "react"
 import dynamic from "next/dynamic"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { features } from "@/constants"
 import {
   Box,
@@ -106,14 +108,18 @@ const useStyles = createStyles((theme) => ({
 }))
 
 export function HeaderMegaMenu({ session }: { session: Session | null }) {
+  const pathname = usePathname()
+
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false)
   const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false)
   const { classes, theme } = useStyles()
-
+  useEffect(() => {
+    closeDrawer()
+  }, [pathname, closeDrawer])
   const links = features.map((item) => (
     <HeaderLink
-      href={session ? item.hrefSession :  item.href }
+      href={item.hrefSession}
       icon={item.icon}
       title={item.title}
       description={item.description}
@@ -121,19 +127,9 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
   ))
 
   return (
-    <Container
-      className={`top-0 w-full z-40 sticky bg-slate-50/70 dark:bg-slate-900/50`}
-    >
-      <Header
-        height={70}
-        px="md"
-        className="bg-slate-50/70 dark:bg-slate-900/50"
-      >
-        <Group
-          position="apart"
-          sx={{ height: "100%" }}
-          className="bg-slate-50/70 dark:bg-slate-900/50"
-        >
+    <Container className={`top-0 w-full z-40 sticky  `}>
+      <Header height={70} px="md" className="">
+        <Group position="apart" sx={{ height: "100%" }} className="">
           <div className="text-lg font-extrabold dark:text-neutral-100 text-neutral-800">
             <Link href={"/"}>Translator</Link>
           </div>
@@ -147,62 +143,44 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
                 Home
               </Link>
             )}
-
-            <HoverCard
-              width={600}
-              position="bottom"
-              radius="md"
-              shadow="md"
-              withinPortal
-            >
-              <HoverCard.Target>
-                <Link href="/features" className={classes.link}>
-                  <Center inline>
-                    <Box component="span" mr={5}>
-                      Features
-                    </Box>
-                    <AiOutlineDown size={16} color={theme.fn.primaryColor()} />
-                  </Center>
-                </Link>
-              </HoverCard.Target>
-              <HoverCard.Dropdown sx={{ overflow: "hidden" }}>
-                <Group position="apart" px="md">
-                  <Text fw={500}>Features</Text>
-                  <Link
-                    href="/features"
-                    className="font-light text-sm text-sky-500 hover:underline underline-offset-1 "
-                  >
-                    View all
+            {session && (
+              <HoverCard
+                width={600}
+                position="bottom"
+                radius="md"
+                shadow="md"
+                withinPortal
+              >
+                <HoverCard.Target>
+                  <Link href="/features" className={classes.link}>
+                    <Center inline>
+                      <Box component="span" mr={5}>
+                        Features
+                      </Box>
+                      <AiOutlineDown
+                        size={16}
+                        color={theme.fn.primaryColor()}
+                      />
+                    </Center>
                   </Link>
-                </Group>
-                <Divider
-                  my="sm"
-                  mx="-md"
-                  color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
-                />
-                <SimpleGrid cols={2} spacing={0}>
-                  {links}
-                </SimpleGrid>
-                <div className={classes.dropdownFooter}>
-                  <Group position="apart">
-                    <div>
-                      <Text fw={500} fz="sm">
-                        Get started
-                      </Text>
-                      <Text size="xs" color="dimmed">
-                        Try paid version
-                      </Text>
-                    </div>
-                    <Link href="/pricing">
-                      <Button variant="default">Pricing</Button>
-                    </Link>
+                </HoverCard.Target>
+                <HoverCard.Dropdown sx={{ overflow: "hidden" }}>
+                  <Group position="apart" px="md">
+                    <Text fw={500}>Features</Text>
                   </Group>
-                </div>
-              </HoverCard.Dropdown>
-            </HoverCard>
-            <Link href="/about" className={classes.link}>
-              About
-            </Link>
+                  <Divider
+                    my="sm"
+                    mx="-md"
+                    color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
+                  />
+                  <SimpleGrid cols={2} spacing={0}>
+                    {links}
+                  </SimpleGrid>
+                  <div className={classes.dropdownFooter}></div>
+                </HoverCard.Dropdown>
+              </HoverCard>
+            )}
+
             <Link href="/contact" className={classes.link}>
               Contact
             </Link>
@@ -262,9 +240,7 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
             </Center>
           </UnstyledButton>
           <Collapse in={linksOpened}>{links}</Collapse>
-          <Link href="/about" className={classes.link}>
-            About
-          </Link>
+
           <Link href="/contact" className={classes.link}>
             Contact
           </Link>
@@ -272,16 +248,18 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
             my="sm"
             color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
           />
-          <Group position="center" grow pb="xl" px="md">
-            <Link className="w-full" href={"/auth/login"}>
-              <Button variant="default" className="w-full">
-                Log in
-              </Button>
-            </Link>
-            <Link className="w-full" href={"/auth/register"}>
-              <Button className="w-full">Sign up</Button>
-            </Link>
-          </Group>
+          {!session && (
+            <Group position="center" grow pb="xl" px="md">
+              <Link className="w-full" href={"/auth/login"}>
+                <Button variant="default" className="w-full">
+                  Log in
+                </Button>
+              </Link>
+              <Link className="w-full" href={"/auth/register"}>
+                <Button className="w-full">Sign up</Button>
+              </Link>
+            </Group>
+          )}
         </ScrollArea>
       </Drawer>
     </Container>

@@ -1,5 +1,7 @@
+import { Grammar } from "@/components/pages/locale"
+
 const page = () => {
-  return <div>page</div>
+  return <Grammar />
 }
 
 export default page

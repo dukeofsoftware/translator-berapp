@@ -20,6 +20,11 @@ export async function POST(request: Request) {
     })
     return NextResponse.json(response.data)
   } catch (error: any) {
-    return NextResponse.json({ error: error })
+    return NextResponse.json(
+      { error },
+      {
+        status: 400,
+      }
+    )
   }
 }

@@ -1,7 +1,9 @@
 "use client"
+
 import { yupResolver } from "@hookform/resolvers/yup"
 import {
   Button,
+  Container,
   Flex,
   Group,
   Input,
@@ -169,92 +171,90 @@ export default function Contact() {
     mutateAsync(data)
   }
   return (
-    <Paper shadow="md" radius="lg">
-      <div className={classes.wrapper}>
-        <div className={classes.contacts}>
-          <Text fz="lg" fw={700} className={classes.title} c="#fff">
-            Contact information
-          </Text>
-          {contactInformation.map((item, index) => (
-            <div>
-              <Flex justify={"center"} gap={"md"}>
-                <item.icon />
-                <Flex direction={"column"} className="grow" gap="sm">
-                  <Text c="#fff" key={index}>
-                    {item.title}
-                  </Text>
-                  <Text c="#fff" key={index}>
-                    {item.value}
-                  </Text>
+    <Container>
+      <Paper shadow="md" radius="lg">
+        <div className={classes.wrapper}>
+          <div className={classes.contacts}>
+            <Text fz="lg" fw={700} className={classes.title} c="#fff">
+              Contact information
+            </Text>
+            {contactInformation.map((item, index) => (
+              <div>
+                <Flex justify={"center"}>
+                  <item.icon />
+                  <Flex direction={"column"} className="grow">
+                    <Text c="#fff" fw={"bold"} key={index}>
+                      {item.title}
+                    </Text>
+                    <Text c="#fff" key={index}>
+                      {item.value}
+                    </Text>
+                  </Flex>
                 </Flex>
-              </Flex>
-            </div>
-          ))}
-        </div>
-
-        <form className={classes.form} onSubmit={handleSubmit(onSubmit)}>
-          <Text fz="lg" fw={700} className={classes.title}>
-            Get in touch
-          </Text>
-
-          <div className={classes.fields}>
-            <SimpleGrid cols={2} breakpoints={[{ maxWidth: "sm", cols: 1 }]}>
-              <TextInput
-                withAsterisk
-                error={errors.name?.message?.toString()}
-                {...register("name")}
-                label="Your name"
-                placeholder="Your name"
-              />
-              <TextInput
-                label="Your email"
-                withAsterisk
-                {...register("email")}
-                placeholder="hello@gmail.com"
-              />
-            </SimpleGrid>
-            <Input.Wrapper id={id} label="Your phone">
-              <Input<any>
-                error={errors.phone?.message?.toString()}
-                {...register("phone")}
-                component={IMaskInput}
-                mask="+7 (000) 000-00-00"
-                id={id}
-                placeholder="Your phone"
-              />
-            </Input.Wrapper>
-            <TextInput
-              mt="md"
-              label="Subject"
-              error={errors.subject?.message?.toString()}
-              {...register("subject")}
-              withAsterisk
-              placeholder="Subject"
-            />
-
-            <Textarea
-              error={errors.message?.message?.toString()}
-              withAsterisk
-              {...register("message")}
-              mt="md"
-              label="Your message"
-              placeholder="Please include all relevant information"
-              minRows={3}
-            />
-
-            <Group position="right" mt="md">
-              <Button
-                type="submit"
-                className={classes.control}
-                loading={isLoading}
-              >
-                Send message
-              </Button>
-            </Group>
+              </div>
+            ))}
           </div>
-          {isError && <Text c="red">Something went wrong</Text>}
-        </form>
-      </div>
-    </Paper>
+          <form className={classes.form} onSubmit={handleSubmit(onSubmit)}>
+            <Text fz="lg" fw={700} className={classes.title}>
+              Get in touch
+            </Text>
+            <div className={classes.fields}>
+              <SimpleGrid cols={2} breakpoints={[{ maxWidth: "sm", cols: 1 }]}>
+                <TextInput
+                  withAsterisk
+                  error={errors.name?.message?.toString()}
+                  {...register("name")}
+                  label="Your name"
+                  placeholder="Your name"
+                />
+                <TextInput
+                  label="Your email"
+                  withAsterisk
+                  {...register("email")}
+                  placeholder="hello@gmail.com"
+                />
+              </SimpleGrid>
+              <Input.Wrapper id={id} label="Your phone">
+                <Input<any>
+                  error={errors.phone?.message?.toString()}
+                  {...register("phone")}
+                  component={IMaskInput}
+                  mask="+90 (000) 000-00-00"
+                  id={id}
+                  placeholder="Your phone"
+                />
+              </Input.Wrapper>
+              <TextInput
+                mt="md"
+                label="Subject"
+                error={errors.subject?.message?.toString()}
+                {...register("subject")}
+                withAsterisk
+                placeholder="Subject"
+              />
+              <Textarea
+                error={errors.message?.message?.toString()}
+                withAsterisk
+                {...register("message")}
+                mt="md"
+                label="Your message"
+                placeholder="Please include all relevant information"
+                minRows={3}
+              />
+              <Group position="right" mt="md">
+                <Button
+                  type="submit"
+                  className={classes.control}
+                  loading={isLoading}
+                >
+                  Send message
+                </Button>
+              </Group>
+            </div>
+            {isError && <Text c="red">Something went wrong</Text>}
+          </form>
+        </div>
+      </Paper>
+    </Container>
   )
 }
