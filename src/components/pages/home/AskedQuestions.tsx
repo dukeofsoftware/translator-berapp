@@ -32,7 +32,7 @@ const askedQuestions = [
   {
     title: "Is using the application free of charge?",
     description:
-      "Using the application is free of charge, but if you want to upgrade your plan, you can check the pricing page.",
+      "Using the application is free of charge",
   },
   {
     title: "How can I contact you?",
