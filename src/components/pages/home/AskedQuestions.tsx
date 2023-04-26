@@ -23,11 +23,7 @@ const useStyles = createStyles((theme) => ({
 }))
 
 const askedQuestions = [
-  {
-    title: "How can I reset my password?",
-    description:
-      "After logging in, you can change your password from the settings section in the top right menu.",
-  },
+
   {
     title: "Which languages does the dictionary support?",
     description:
