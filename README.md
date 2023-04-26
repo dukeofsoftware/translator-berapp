@@ -55,9 +55,12 @@ React-hook-form, react-query, mantine, openai API'sini kullanmayı öğrendim. T
 
 ## Ekran Görüntüleri
 
-![Uygulama Ekran Görüntüsü](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
+Grammar yanlışlarını farklı dillerde bulma ve düzeltme sunma
+![image](https://user-images.githubusercontent.com/89215036/234472666-6af69048-241c-4de9-a199-81dc654a33c1.png)
   
+Girilen kelimenin ingilizce sözlükteki anlamlarını gösterme ve örnek verme
+![image](https://user-images.githubusercontent.com/89215036/234472823-3e6aac4c-5ecc-4889-9b5a-e809a1726ed8.png)
+
 ## Kullanılan Teknolojiler
 
 **İstemci:** HTML, CSS, TailwindCSS, Mantine , Typescript, React.js, Next.js
