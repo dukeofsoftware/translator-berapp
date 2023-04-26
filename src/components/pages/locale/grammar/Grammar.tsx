@@ -54,7 +54,6 @@ const Grammar = () => {
     refetchOnWindowFocus: false,
   })
   const {
-    isLoading: mutateLoading,
     data,
     mutateAsync,
   } = useMutation({

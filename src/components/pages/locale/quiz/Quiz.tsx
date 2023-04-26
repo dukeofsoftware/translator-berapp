@@ -1,7 +1,7 @@
 "use client"
 
 import { useCallback, useEffect, useState } from "react"
-import { Button, Text } from "@mantine/core"
+import {  Text } from "@mantine/core"
 import { AiOutlineCheck, AiOutlineClose } from "react-icons/ai"
 
 interface QuizAnswer {
