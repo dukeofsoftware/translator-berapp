@@ -104,7 +104,7 @@ const useStyles = createStyles((theme) => ({
 }))
 
 interface sessionProp {
-  session?:Session
+  session?:Session | null
 }
 
 export function HeroSection({ session }: sessionProp) {

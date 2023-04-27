@@ -8,7 +8,7 @@ import { Session } from "next-auth"
 const FeaturesSection = dynamic(() => import("./FeaturesSection"))
 const AskedQuestions = dynamic(() => import("./AskedQuestions"))
 interface HomePageProps {
-  session?:Session
+  session?:Session  | null
 }
 
 
