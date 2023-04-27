@@ -40,16 +40,16 @@ const Signup = () => {
   })
 
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
-    console.log("data", data)
     if (data.password !== data.passwordConfirmation) {
       toast.error("Passwords do not match")
       return
     }
     setIsLoading(true)
 
-    await toast.promise(
+    const axiosResposne = await toast.promise(
       axios
         .post("/api/user", {
+          username: data.username,
           name: data.name,
           email: data.email,
           password: data.password,
@@ -58,7 +58,7 @@ const Signup = () => {
           return res.data
         })
         .catch((error) => {
-          toast.error(error.response)
+          toast.error(error)
         }),
       {
         pending: "Sign up in progress",
@@ -66,6 +66,7 @@ const Signup = () => {
         error: "Failed to sign up",
       }
     )
+    console.log(axiosResposne)
     setIsLoading(false)
     router.push("/auth/login")
   }

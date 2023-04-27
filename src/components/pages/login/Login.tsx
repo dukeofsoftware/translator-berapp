@@ -12,7 +12,6 @@ import {
   TextInput,
   Title,
 } from "@mantine/core"
-import { useDisclosure } from "@mantine/hooks"
 import { useMutation } from "@tanstack/react-query"
 import { signIn } from "next-auth/react"
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form"
@@ -22,9 +21,9 @@ import { toast } from "react-toastify"
 
 import { userLoginSchema } from "@/lib/validation/userSchema"
 import GoogleAuth from "@/components/auth/GoogleAuth"
+import { AiFillEyeInvisible ,AiFillEye} from "react-icons/ai"
 
 const Login = () => {
-  const [visible, { toggle }] = useDisclosure(false)
 
   const signInWithCredentials = async (data: FieldValues) => {
     try {
@@ -98,13 +97,14 @@ const Login = () => {
             <PasswordInput
               placeholder="Password"
               type="password"
-              onVisibilityChange={toggle}
               withAsterisk
               error={errors.password?.message?.toString()}
               label="Password"
               {...register("password")}
               icon={<RiLockPasswordFill />}
-              visible={visible}
+              visibilityToggleIcon={({ reveal, size }) =>
+              reveal ? <AiFillEyeInvisible size={size} /> : <AiFillEye size={size} />
+            }
             />
           </div>
           <Button variant={"outline"} type="submit" loading={isLoading}>
