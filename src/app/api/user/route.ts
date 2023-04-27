@@ -7,10 +7,7 @@ import {
   getCurrentUser,
 } from "@/lib/prisma/user"
 
-export async function GET() {
-  const users = await getAllUsers()
-  return NextResponse.json(users)
-}
+
 export async function POST(request: Request) {
   try {
     const currentUser = await getCurrentUser()
@@ -30,7 +27,7 @@ export async function POST(request: Request) {
     }
     return NextResponse.json({ user })
   } catch (error: any) {
-    throw new Error(error.message)
+    throw new Error(error)
   }
 }
 export async function DELETE(request: Request) {
