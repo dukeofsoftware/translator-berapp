@@ -127,10 +127,8 @@ export function HeroSection({ session }: sessionProp) {
               grammar check, spell check, AI translation, and more.
             </Text>
           </Container>
-          {session ?  
-         (
-          <p className="text-2xl font-bold text-white">Start diving!</p>
-         ):
+          {!session &&
+        
           (
             <div className={classes.controls}>
             <Link href="/auth/register">
