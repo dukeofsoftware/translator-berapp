@@ -1,7 +1,6 @@
 
 import { HomePage } from "@/components/pages"
-import { getSession } from "next-auth/react"
-
+import { getSession } from "@/lib/prisma/user"
 
 const page =async () => {
 
