@@ -18,12 +18,12 @@ export async function POST(request: Request) {
       return Response.redirect(new URL("/berapp", request.url))
     }
 
-    const { username, email, password, name } = await request.json()
-    if (!username || !email || !password || !name) {
+    const {  email, password, name } = await request.json()
+    if ( !email || !password || !name) {
       throw new Error("Lütfen tüm alanları doldurunuz.")
     }
 
-    const user = await createUser(username, name, email, password)
+    const user = await createUser( name, email, password)
 
     if (!user) {
       throw new Error("Kullanıcı oluşturulamadı.")

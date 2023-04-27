@@ -89,9 +89,8 @@ const useStyles = createStyles((theme) => ({
     marginTop: theme.spacing.sm,
     padding: `${theme.spacing.md} calc(${theme.spacing.md} * 2)`,
     paddingBottom: theme.spacing.xl,
-    borderTop: `${rem(1)} solid ${
-      theme.colorScheme === "dark" ? theme.colors.dark[5] : theme.colors.gray[1]
-    }`,
+    borderTop: `${rem(1)} solid ${theme.colorScheme === "dark" ? theme.colors.dark[5] : theme.colors.gray[1]
+      }`,
   },
 
   hiddenMobile: {
@@ -127,90 +126,94 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
   ))
 
   return (
-    <Container className={`top-0 w-full z-40 sticky  `}>
-      <Header height={70} px="md" className="">
-        <Group position="apart" sx={{ height: "100%" }} className="">
-          <div className="text-lg font-extrabold dark:text-neutral-100 text-neutral-800">
-            <Link href={"/"}>Translator</Link>
-          </div>
-          <Group
-            sx={{ height: "100%" }}
-            spacing={0}
-            className={classes.hiddenMobile}
-          >
-            {session && (
-              <Link href="/" className={classes.link}>
-                Home
-              </Link>
-            )}
-            {session && (
-              <HoverCard
-                width={600}
-                position="bottom"
-                radius="md"
-                shadow="md"
-                withinPortal
-              >
-                <HoverCard.Target>
-                  <Link href="/features" className={classes.link}>
-                    <Center inline>
-                      <Box component="span" mr={5}>
-                        Features
-                      </Box>
-                      <AiOutlineDown
-                        size={16}
-                        color={theme.fn.primaryColor()}
-                      />
-                    </Center>
-                  </Link>
-                </HoverCard.Target>
-                <HoverCard.Dropdown sx={{ overflow: "hidden" }}>
-                  <Group position="apart" px="md">
-                    <Text fw={500}>Features</Text>
-                  </Group>
-                  <Divider
-                    my="sm"
-                    mx="-md"
-                    color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
-                  />
-                  <SimpleGrid cols={2} spacing={0}>
-                    {links}
-                  </SimpleGrid>
-                  <div className={classes.dropdownFooter}></div>
-                </HoverCard.Dropdown>
-              </HoverCard>
-            )}
-
-            <Link href="/contact" className={classes.link}>
-              Contact
-            </Link>
-          </Group>
-          <Group className={classes.hiddenMobile}>
-            <div className="flex items-center gap-2">
-              {session ? (
-                <UserMenu session={session} />
-              ) : (
-                <div className="flex items-center gap-2">
-                  <Link href="/auth/login">
-                    <Button variant="outline" color="gray">
-                      Login
-                    </Button>
-                  </Link>
-                  <Link href="/auth/register">
-                    <Button variant="light">Sign Up</Button>
-                  </Link>
-                </div>
-              )}
-              <ThemeToggle />
+    <>
+      <Container className={`top-0 w-full z-40 sticky  `}>
+        <Header height={70} px="md" className="">
+          <Group position="apart" sx={{ height: "100%" }} className="">
+            <div className="text-lg font-extrabold dark:text-neutral-100 text-neutral-800">
+              <Link href={"/"}>Translator</Link>
             </div>
+            <Group
+              sx={{ height: "100%" }}
+              spacing={0}
+              className={classes.hiddenMobile}
+            >
+              {session && (
+                <Link href="/" className={classes.link}>
+                  Home
+                </Link>
+              )}
+              {session && (
+                <HoverCard
+                  width={600}
+                  position="bottom"
+                  radius="md"
+                  shadow="md"
+                  withinPortal
+                >
+                  <HoverCard.Target>
+                    <Link href="/features" className={classes.link}>
+                      <Center inline>
+                        <Box component="span" mr={5}>
+                          Features
+                        </Box>
+                        <AiOutlineDown
+                          size={16}
+                          color={theme.fn.primaryColor()}
+                        />
+                      </Center>
+                    </Link>
+                  </HoverCard.Target>
+                  <HoverCard.Dropdown sx={{ overflow: "hidden" }}>
+                    <Group position="apart" px="md">
+                      <Text fw={500}>Features</Text>
+                    </Group>
+                    <Divider
+                      my="sm"
+                      mx="-md"
+                      color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
+                    />
+                    <SimpleGrid cols={2} spacing={0}>
+                      {links}
+                    </SimpleGrid>
+                    <div className={classes.dropdownFooter}></div>
+                  </HoverCard.Dropdown>
+                </HoverCard>
+              )}
+
+              <Link href="/contact" className={classes.link}>
+                Contact
+              </Link>
+            </Group>
+            <Group className={classes.hiddenMobile}>
+              <div className="flex items-center gap-2">
+                {session ? (
+                  <UserMenu session={session} />
+                ) : (
+                  <div className="flex items-center gap-2">
+                    <Link href="/auth/login">
+                      <Button variant="outline" color="gray">
+                        Login
+                      </Button>
+                    </Link>
+                    <Link href="/auth/register">
+                      <Button variant="light">Sign Up</Button>
+                    </Link>
+                  </div>
+                )}
+                <ThemeToggle />
+              </div>
+            </Group>
+            <Burger
+              opened={drawerOpened}
+              onClick={toggleDrawer}
+              className={classes.hiddenDesktop}
+            />
           </Group>
-          <Burger
-            opened={drawerOpened}
-            onClick={toggleDrawer}
-            className={classes.hiddenDesktop}
-          />
-        </Group>
-      </Header>
+        </Header>
+      </Container>
+
+
       <Drawer
         closeButtonProps={{
           children: <CloseButton aria-label="Close modal" />,
@@ -262,6 +265,6 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
           )}
         </ScrollArea>
       </Drawer>
-    </Container>
+    </>
   )
 }

@@ -50,7 +50,6 @@ const Signup = () => {
     await toast.promise(
       axios
         .post("/api/user", {
-          username: data.username,
           name: data.name,
           email: data.email,
           password: data.password,

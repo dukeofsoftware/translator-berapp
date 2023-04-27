@@ -5,14 +5,13 @@ import { hashPass, isSamePass } from "../crpyt"
 import { db } from "./db"
 
 export const createUser = async (
-  username: string,
   name: string,
   email: string,
   password: string
 ) => {
   const hashedPassword = await hashPass(password)
   const data = {
-    username,
+    
     name,
     email,
     password: hashedPassword,
@@ -153,7 +152,6 @@ export async function getAllUsers() {
         name: true,
         email: true,
         password: true,
-        username: true,
 
         createdAt: true,
         updatedAt: true,
