@@ -9,7 +9,6 @@ export default withAuth(
     // Manage route protection
     const isAuth = await getToken({ req })
     const isAuthPage = pathname.startsWith("/auth")
-    const isFeaturePage = pathname.startsWith("/features")
     const sensitiveRoutes = ["/berapp"]
     const isAccessingSensitiveRoute = sensitiveRoutes.some((route) =>
       pathname.startsWith(route)
@@ -19,11 +18,7 @@ export default withAuth(
         return NextResponse.redirect(new URL("/berapp", req.url))
       }
     }
-    if (isFeaturePage) {
-      if (isAuth) {
-        return NextResponse.redirect(new URL("/berapp", req.url))
-      }
-    }
+   
     if (isAuthPage) {
       if (isAuth) {
         return NextResponse.redirect(new URL("/berapp", req.url))
@@ -52,6 +47,5 @@ export const config = {
     "/berapp/:path*",
     "/berapp",
     "/",
-    "/features/:path*",
   ],
 }
