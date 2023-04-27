@@ -3,14 +3,19 @@
 import dynamic from "next/dynamic"
 
 import { HeroSection } from "./HeroSection"
+import { Session } from "next-auth"
 
 const FeaturesSection = dynamic(() => import("./FeaturesSection"))
 const AskedQuestions = dynamic(() => import("./AskedQuestions"))
+interface HomePageProps {
+  session?:Session
+}
 
-const HomePage = () => {
+
+const HomePage:React.FC<HomePageProps>= ({session}) => {
   return (
     <div>
-      <HeroSection />
+      <HeroSection session={session} />
       <FeaturesSection />
       <AskedQuestions />
     </div>

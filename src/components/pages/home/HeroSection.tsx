@@ -10,6 +10,7 @@ import {
   createStyles,
   rem,
 } from "@mantine/core"
+import { Session } from "next-auth"
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -102,7 +103,11 @@ const useStyles = createStyles((theme) => ({
   },
 }))
 
-export function HeroSection() {
+interface sessionProp {
+  session?:Session
+}
+
+export function HeroSection({ session }: sessionProp) {
   const { classes, cx } = useStyles()
 
   return (
@@ -122,7 +127,12 @@ export function HeroSection() {
               grammar check, spell check, AI translation, and more.
             </Text>
           </Container>
-          <div className={classes.controls}>
+          {session ?  
+         (
+          <p className="text-2xl font-bold text-white">Start diving!</p>
+         ):
+          (
+            <div className={classes.controls}>
             <Link href="/auth/register">
               <Button className={classes.control} variant="white" size="lg">
                 Get started
@@ -137,6 +147,8 @@ export function HeroSection() {
               </Button>
             </Link>
           </div>
+          )}
+        
         </div>
       </Container>
     </div>
