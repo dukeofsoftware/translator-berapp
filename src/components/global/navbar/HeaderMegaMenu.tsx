@@ -152,7 +152,6 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
                   withinPortal
                 >
                   <HoverCard.Target>
-                    <Link href="/features" className={classes.link}>
                       <Center inline>
                         <Box component="span" mr={5}>
                           Features
@@ -162,7 +161,6 @@ export function HeaderMegaMenu({ session }: { session: Session | null }) {
                           color={theme.fn.primaryColor()}
                         />
                       </Center>
-                    </Link>
                   </HoverCard.Target>
                   <HoverCard.Dropdown sx={{ overflow: "hidden" }}>
                     <Group position="apart" px="md">
