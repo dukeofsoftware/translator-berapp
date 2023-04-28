@@ -9,7 +9,7 @@ import {
   createStyles,
   rem,
 } from "@mantine/core"
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
+import { AiFillGithub,  } from "react-icons/ai"
 import { BsDiscord } from "react-icons/bs"
 
 const useStyles = createStyles((theme) => ({
@@ -125,10 +125,7 @@ const footerData = [
         label: "Github",
         link: "https://github.com/dukeofsoftware/translator-berapp",
       },
-      {
-        label: "Linkedin",
-        link: "https://www.linkedin.com/in/furkan-emre-kozan/",
-      },
+  
       {
         label: "Instagram",
         link: "https://www.instagram.com/artikyorgunhissediyor/",
@@ -176,12 +173,8 @@ export function Footer() {
       </Container>
       <Container className={classes.afterFooter}>
         <Group spacing={0} className={classes.social} position="right" noWrap>
+         
           <a href="https://github.com/dukeofsoftware/translator-berapp">
-            <ActionIcon size="lg">
-              <AiFillLinkedin size="1.05rem" />
-            </ActionIcon>
-          </a>
-          <a href="https://www.linkedin.com/in/furkan-emre-kozan/">
             <ActionIcon size="lg">
               <AiFillGithub size="1.05rem" />
             </ActionIcon>
